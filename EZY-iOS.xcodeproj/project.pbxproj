@@ -30,6 +30,7 @@
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CD02821163100EBB527 /* EZYStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975CCF2821163100EBB527 /* EZYStep.swift */; };
 		EE975CDD2821196700EBB527 /* StepExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975CDC2821196700EBB527 /* StepExt.swift */; };
+		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 				EE975CC428210C6100EBB527 /* RxFlow in Frameworks */,
 				EE975CC9282112FF00EBB527 /* Lottie in Frameworks */,
 				EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */,
+				EE975CE028211BF500EBB527 /* Inject in Frameworks */,
 				EE975CAF2820EB6300EBB527 /* RxMoya in Frameworks */,
 				EE975C922820E81C00EBB527 /* KeychainSwift in Frameworks */,
 				EE975CB12820EB6700EBB527 /* Swinject in Frameworks */,
@@ -257,6 +259,7 @@
 				EE975CC328210C6100EBB527 /* RxFlow */,
 				EE975CC8282112FF00EBB527 /* Lottie */,
 				EE975CCB2821133C00EBB527 /* UIGradient */,
+				EE975CDF28211BF500EBB527 /* Inject */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -301,6 +304,7 @@
 				EE975CC228210C6100EBB527 /* XCRemoteSwiftPackageReference "RxFlow" */,
 				EE975CC7282112FF00EBB527 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				EE975CCA2821133C00EBB527 /* XCRemoteSwiftPackageReference "UIGradient" */,
+				EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -484,6 +488,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "JiHoonAHN.EZY-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -655,6 +663,14 @@
 				kind = branch;
 			};
 		};
+		EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -730,6 +746,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE975CCA2821133C00EBB527 /* XCRemoteSwiftPackageReference "UIGradient" */;
 			productName = UIGradient;
+		};
+		EE975CDF28211BF500EBB527 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

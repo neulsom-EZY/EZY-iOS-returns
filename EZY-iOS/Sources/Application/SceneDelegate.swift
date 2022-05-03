@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxFlow
+import Inject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -34,10 +35,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             appFlow,
             when: .created
         ) { [weak self] root in
-            self?.window?.rootViewController = root
+            self?.window?.rootViewController = Inject.ViewControllerHost(root)
             self?.window?.makeKeyAndVisible()
         }
-        
     }
     
     private func coordinateLogger(){
