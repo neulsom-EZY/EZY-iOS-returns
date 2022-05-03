@@ -35,6 +35,8 @@
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
+		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
+		EECDAF1028216CE50048306E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0F28216CE50048306E /* TextFieldEffects */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 				EE975CC9282112FF00EBB527 /* Lottie in Frameworks */,
 				EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */,
 				EE975CE028211BF500EBB527 /* Inject in Frameworks */,
+				EECDAF1028216CE50048306E /* TextFieldEffects in Frameworks */,
+				EECDAF0D28216AD40048306E /* Switches in Frameworks */,
 				EE975CAF2820EB6300EBB527 /* RxMoya in Frameworks */,
 				EE975C922820E81C00EBB527 /* KeychainSwift in Frameworks */,
 				EE975CB12820EB6700EBB527 /* Swinject in Frameworks */,
@@ -248,6 +252,8 @@
 				EE975CDF28211BF500EBB527 /* Inject */,
 				EE8D86B428214C6100A9E99F /* SnapKit */,
 				EECDAF09282169C10048306E /* EZYUI */,
+				EECDAF0C28216AD40048306E /* Switches */,
+				EECDAF0F28216CE50048306E /* TextFieldEffects */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -291,6 +297,8 @@
 				EE975CC7282112FF00EBB527 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				EE975CCA2821133C00EBB527 /* XCRemoteSwiftPackageReference "UIGradient" */,
 				EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */,
+				EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */,
+				EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -647,6 +655,22 @@
 				kind = branch;
 			};
 		};
+		EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jwd-ali/Switch-Animations.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -726,6 +750,16 @@
 		EECDAF09282169C10048306E /* EZYUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = EZYUI;
+		};
+		EECDAF0C28216AD40048306E /* Switches */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */;
+			productName = Switches;
+		};
+		EECDAF0F28216CE50048306E /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

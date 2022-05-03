@@ -39,7 +39,9 @@ let package = Package(
             dependencies: []),
         .target(
             name: "EZYUI",
-            dependencies: []),
+            dependencies: [
+                "UIUtil",
+            ]),
 //        .target(
 //            name: "RxUtil",
 //            dependencies: [

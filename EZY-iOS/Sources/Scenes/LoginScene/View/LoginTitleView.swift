@@ -7,13 +7,14 @@
 import UIKit
 import UIUtil
 import SnapKit
+import EZYUI
 
 final class LoginTitleView : UIView{
     //MARK: - Properties
     private lazy var titleLabel = UILabel().then {
         $0.text = "EZY"
         $0.font = .boldSystemFont(ofSize: 38)
-        $0.updateGradientTextColor_vertical(gradientColors: [UIColor.red,UIColor.black])
+        $0.updateGradientTextColor_vertical(gradientColors: [UIColor.EZY_Pupple,UIColor.EZY_SkyBlue])
     }
     
     private let subLabel = UILabel().then {
