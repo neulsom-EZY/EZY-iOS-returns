@@ -11,6 +11,9 @@ let package = Package(
         .library(
             name: "Base",
             targets: ["Base"]),
+        .library(
+            name: "UIUtil",
+            targets: ["UIUtil"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
@@ -23,5 +26,8 @@ let package = Package(
             dependencies: [
                 "RxSwift"
             ]),
+        .target(
+            name: "UIUtil",
+            dependencies: []),
     ]
 )

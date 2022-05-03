@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "09d22c087732b02d4fb594c7bb61502bf7bb2378"
+      }
+    },
+    {
       "identity" : "keychain-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/evgenyneu/keychain-swift.git",
@@ -61,15 +70,6 @@
       "state" : {
         "branch" : "master",
         "revision" : "9a5756ba41f7a864ff0738c21876d52b9e67eec7"
-      }
-    },
-    {
-      "identity" : "rxkeyboard",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/RxSwiftCommunity/RxKeyboard.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "c532cc3eabedd4f145e27241c5f1591876029608"
       }
     },
     {

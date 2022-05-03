@@ -27,7 +27,7 @@
 		EE975CB12820EB6700EBB527 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CB02820EB6700EBB527 /* Swinject */; };
 		EE975CB42820EE4200EBB527 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CB32820EE4200EBB527 /* Reusable */; };
 		EE975CB62820EEBF00EBB527 /* Base in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CB52820EEBF00EBB527 /* Base */; };
-		EE975CB92820F06B00EBB527 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CB82820F06B00EBB527 /* RxKeyboard */; };
+		EE975CBC2820F1BC00EBB527 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CBB2820F1BC00EBB527 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +57,11 @@
 				EE975CB12820EB6700EBB527 /* Swinject in Frameworks */,
 				EE975CB42820EE4200EBB527 /* Reusable in Frameworks */,
 				EE975C8E2820E79500EBB527 /* Then in Frameworks */,
+				EE975CBC2820F1BC00EBB527 /* IQKeyboardManagerSwift in Frameworks */,
 				EE975CAD2820EB5D00EBB527 /* RxCocoa in Frameworks */,
 				EE975CAB2820EB5900EBB527 /* RxSwift in Frameworks */,
 				EE975CB62820EEBF00EBB527 /* Base in Frameworks */,
 				EE975C962820E88300EBB527 /* PanModal in Frameworks */,
-				EE975CB92820F06B00EBB527 /* RxKeyboard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +226,7 @@
 				EE975CB02820EB6700EBB527 /* Swinject */,
 				EE975CB32820EE4200EBB527 /* Reusable */,
 				EE975CB52820EEBF00EBB527 /* Base */,
-				EE975CB82820F06B00EBB527 /* RxKeyboard */,
+				EE975CBB2820F1BC00EBB527 /* IQKeyboardManagerSwift */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -266,7 +266,7 @@
 				EE975C942820E88300EBB527 /* XCRemoteSwiftPackageReference "PanModal" */,
 				EE975C972820E99800EBB527 /* XCRemoteSwiftPackageReference "ReusableKit" */,
 				EE975CB22820EE4200EBB527 /* XCRemoteSwiftPackageReference "Reusable" */,
-				EE975CB72820F06B00EBB527 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				EE975CBA2820F1BC00EBB527 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -584,9 +584,9 @@
 				kind = branch;
 			};
 		};
-		EE975CB72820F06B00EBB527 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+		EE975CBA2820F1BC00EBB527 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard.git";
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -639,10 +639,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Base;
 		};
-		EE975CB82820F06B00EBB527 /* RxKeyboard */ = {
+		EE975CBB2820F1BC00EBB527 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EE975CB72820F06B00EBB527 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
-			productName = RxKeyboard;
+			package = EE975CBA2820F1BC00EBB527 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
