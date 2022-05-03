@@ -10,7 +10,6 @@
 		EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6C2820DDA700EBB527 /* AppDelegate.swift */; };
 		EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */; };
 		EE975C712820DDA700EBB527 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C702820DDA700EBB527 /* ViewController.swift */; };
-		EE975C742820DDA700EBB527 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE975C722820DDA700EBB527 /* Main.storyboard */; };
 		EE975C762820DDA900EBB527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE975C752820DDA900EBB527 /* Assets.xcassets */; };
 		EE975C792820DDA900EBB527 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE975C772820DDA900EBB527 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,10 +19,9 @@
 		EE975C6C2820DDA700EBB527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE975C702820DDA700EBB527 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE975C732820DDA700EBB527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE975C752820DDA900EBB527 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE975C782820DDA900EBB527 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,86 @@
 		EE975C6B2820DDA700EBB527 /* EZY-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EE975C6C2820DDA700EBB527 /* AppDelegate.swift */,
-				EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */,
-				EE975C702820DDA700EBB527 /* ViewController.swift */,
-				EE975C722820DDA700EBB527 /* Main.storyboard */,
-				EE975C752820DDA900EBB527 /* Assets.xcassets */,
-				EE975C772820DDA900EBB527 /* LaunchScreen.storyboard */,
-				EE975C7A2820DDA900EBB527 /* Info.plist */,
+				EE975C822820E51800EBB527 /* Supporting */,
+				EE975C812820E50F00EBB527 /* Resources */,
+				EE975C802820E50A00EBB527 /* Sources */,
 			);
 			path = "EZY-iOS";
+			sourceTree = "<group>";
+		};
+		EE975C802820E50A00EBB527 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C832820E53F00EBB527 /* AppDelegate */,
+				EE975C872820E63B00EBB527 /* Managers */,
+				EE975C862820E63200EBB527 /* Services */,
+				EE975C852820E62B00EBB527 /* Models */,
+				EE975C842820E59700EBB527 /* Scenes */,
+				EE975C702820DDA700EBB527 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EE975C812820E50F00EBB527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C752820DDA900EBB527 /* Assets.xcassets */,
+				EE975C772820DDA900EBB527 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE975C822820E51800EBB527 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C7A2820DDA900EBB527 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		EE975C832820E53F00EBB527 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C6C2820DDA700EBB527 /* AppDelegate.swift */,
+				EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EE975C842820E59700EBB527 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C882820E64600EBB527 /* LoginScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE975C852820E62B00EBB527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EE975C862820E63200EBB527 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE975C872820E63B00EBB527 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EE975C882820E64600EBB527 /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +196,6 @@
 			files = (
 				EE975C792820DDA900EBB527 /* LaunchScreen.storyboard in Resources */,
 				EE975C762820DDA900EBB527 /* Assets.xcassets in Resources */,
-				EE975C742820DDA700EBB527 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EE975C722820DDA700EBB527 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE975C732820DDA700EBB527 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE975C772820DDA900EBB527 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +349,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EZY-iOS/Info.plist";
+				INFOPLIST_FILE = "EZY-iOS/Supporting/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +376,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EZY-iOS/Info.plist";
+				INFOPLIST_FILE = "EZY-iOS/Supporting/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
