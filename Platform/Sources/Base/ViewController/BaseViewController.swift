@@ -19,20 +19,32 @@ open class BaseViewController : UIViewController{
     
     public init(){
         super.init(nibName: nil, bundle: nil)
-        
+        addView()
+        configureUI()
+        delegate()
+        //MARK: - data Bind
+        bindView()
+        bindAction()
+        bindState()
     }
     
     @available(*,unavailable)
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
-
+        addView()
+        configureUI()
+        delegate()
+        //MARK: - data Bind
+        bindView()
+        bindAction()
+        bindState()
     }
     
 
     //MARK: - Layout
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
+        setLayout()
     }
     
     //MARK: - Default BackgroundColor
@@ -46,7 +58,10 @@ open class BaseViewController : UIViewController{
     open func addView(){}
     open func setLayout(){}
     open func configureUI(){}
-    open func keyBoardLayout(){}
     open func delegate() {}
     
+    //MARK: - Bind
+    open func bindView(){}
+    open func bindAction(){}
+    open func bindState(){}
 }

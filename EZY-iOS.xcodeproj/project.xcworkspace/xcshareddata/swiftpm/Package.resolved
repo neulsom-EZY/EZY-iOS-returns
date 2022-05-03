@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "lottie-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-ios.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9127ced37d52f57d572f649c2f138fa324c77175"
+      }
+    },
+    {
       "identity" : "moya",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya",
@@ -55,6 +64,15 @@
       }
     },
     {
+      "identity" : "reactorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactorKit/ReactorKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "be881621c0787797d75f37e4161856f7abee676d"
+      }
+    },
+    {
       "identity" : "reusable",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AliSoftware/Reusable.git",
@@ -70,6 +88,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "9a5756ba41f7a864ff0738c21876d52b9e67eec7"
+      }
+    },
+    {
+      "identity" : "rxflow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxFlow",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d8d4e53d05239f1ec1bd8bec173907868afa0fa1"
       }
     },
     {
@@ -106,6 +133,24 @@
       "state" : {
         "branch" : "master",
         "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
+      }
+    },
+    {
+      "identity" : "uigradient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dqhieu/UIGradient.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "80d42010d24dbe676de684c0fcf4087f5cafe058"
+      }
+    },
+    {
+      "identity" : "weakmaptable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactorKit/WeakMapTable.git",
+      "state" : {
+        "revision" : "cb05d64cef2bbf51e85c53adee937df46540a74e",
+        "version" : "1.2.1"
       }
     }
   ],

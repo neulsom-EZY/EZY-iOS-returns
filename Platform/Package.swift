@@ -14,9 +14,13 @@ let package = Package(
         .library(
             name: "UIUtil",
             targets: ["UIUtil"]),
+//        .library(
+//            name: "RxUtil",
+//            targets: ["RxUtil"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
+//        .package(url: "https://github.com/RxSwiftCommunity/RxFlow", .exactItem("2.13.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -29,5 +33,11 @@ let package = Package(
         .target(
             name: "UIUtil",
             dependencies: []),
+//        .target(
+//            name: "RxUtil",
+//            dependencies: [
+//                "RxSwift",
+//                "RxFlow"
+//            ]),
     ]
 )
