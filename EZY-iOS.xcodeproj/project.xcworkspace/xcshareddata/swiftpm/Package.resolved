@@ -73,15 +73,6 @@
       }
     },
     {
-      "identity" : "reactorkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactorKit/ReactorKit",
-      "state" : {
-        "branch" : "master",
-        "revision" : "be881621c0787797d75f37e4161856f7abee676d"
-      }
-    },
-    {
       "identity" : "reusable",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/AliSoftware/Reusable.git",
@@ -97,15 +88,6 @@
       "state" : {
         "branch" : "master",
         "revision" : "9a5756ba41f7a864ff0738c21876d52b9e67eec7"
-      }
-    },
-    {
-      "identity" : "rxflow",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/RxSwiftCommunity/RxFlow",
-      "state" : {
-        "branch" : "main",
-        "revision" : "d8d4e53d05239f1ec1bd8bec173907868afa0fa1"
       }
     },
     {
@@ -136,6 +118,24 @@
       }
     },
     {
+      "identity" : "switch-animations",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jwd-ali/Switch-Animations.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "039320e478d13c40871c3ee7de996eae8ffeecdd"
+      }
+    },
+    {
+      "identity" : "textfieldeffects",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/raulriera/TextFieldEffects.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d3833902b69eaf7f0eff401d1abc443beb176fd4"
+      }
+    },
+    {
       "identity" : "then",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/devxoul/Then",
@@ -151,15 +151,6 @@
       "state" : {
         "branch" : "master",
         "revision" : "80d42010d24dbe676de684c0fcf4087f5cafe058"
-      }
-    },
-    {
-      "identity" : "weakmaptable",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactorKit/WeakMapTable.git",
-      "state" : {
-        "revision" : "cb05d64cef2bbf51e85c53adee937df46540a74e",
-        "version" : "1.2.1"
       }
     }
   ],

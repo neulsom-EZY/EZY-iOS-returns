@@ -9,8 +9,8 @@ import UIKit
 import RxSwift
 
 open class BaseViewController : UIViewController{
-    let bounds = UIScreen.main.bounds
-    var disposeBag : DisposeBag = .init()
+    public let bounds = UIScreen.main.bounds
+    public var disposeBag : DisposeBag = .init()
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ open class BaseViewController : UIViewController{
         addView()
         configureUI()
         delegate()
-        //MARK: - data Bind
+        
         bindView()
         bindAction()
         bindState()
@@ -34,7 +34,7 @@ open class BaseViewController : UIViewController{
         addView()
         configureUI()
         delegate()
-        //MARK: - data Bind
+        
         bindView()
         bindAction()
         bindState()
@@ -65,3 +65,4 @@ open class BaseViewController : UIViewController{
     open func bindAction(){}
     open func bindState(){}
 }
+

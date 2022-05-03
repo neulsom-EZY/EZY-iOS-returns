@@ -14,12 +14,16 @@ let package = Package(
         .library(
             name: "UIUtil",
             targets: ["UIUtil"]),
+        .library(
+            name: "EZYUI",
+            targets: ["EZYUI"]),
 //        .library(
 //            name: "RxUtil",
 //            targets: ["RxUtil"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
+        .package(url: "https://github.com/AliSoftware/Reusable", .exactItem("4.1.2")),
 //        .package(url: "https://github.com/RxSwiftCommunity/RxFlow", .exactItem("2.13.0"))
     ],
     targets: [
@@ -33,11 +37,15 @@ let package = Package(
         .target(
             name: "UIUtil",
             dependencies: []),
+        .target(
+            name: "EZYUI",
+            dependencies: [
+                "UIUtil",
+            ]),
 //        .target(
 //            name: "RxUtil",
 //            dependencies: [
 //                "RxSwift",
-//                "RxFlow"
 //            ]),
     ]
 )
