@@ -20,6 +20,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
+        .package(url: "https://github.com/AliSoftware/Reusable", .exactItem("4.1.2")),
 //        .package(url: "https://github.com/RxSwiftCommunity/RxFlow", .exactItem("2.13.0"))
     ],
     targets: [
