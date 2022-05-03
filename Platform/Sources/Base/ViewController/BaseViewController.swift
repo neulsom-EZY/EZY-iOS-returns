@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 
 open class BaseViewController : UIViewController{
-    let bounds = UIScreen.main.bounds
+    public let bounds = UIScreen.main.bounds
     public var disposeBag : DisposeBag = .init()
     
     public override func viewDidLoad() {

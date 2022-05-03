@@ -13,6 +13,8 @@
 		EE8D869F2821473000A9E99F /* LoginSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D86992821473000A9E99F /* LoginSceneViewController.swift */; };
 		EE8D86A02821473000A9E99F /* LoginSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D869A2821473000A9E99F /* LoginSceneInteractor.swift */; };
 		EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D869B2821473000A9E99F /* LoginSceneConfigurator.swift */; };
+		EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D86B228214B0200A9E99F /* LoginTitleView.swift */; };
+		EE8D86B528214C6100A9E99F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE8D86B428214C6100A9E99F /* SnapKit */; };
 		EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6C2820DDA700EBB527 /* AppDelegate.swift */; };
 		EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */; };
 		EE975C762820DDA900EBB527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE975C752820DDA900EBB527 /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 		EE975CC9282112FF00EBB527 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CC8282112FF00EBB527 /* Lottie */; };
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
+		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,7 @@
 		EE8D86992821473000A9E99F /* LoginSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneViewController.swift; sourceTree = "<group>"; };
 		EE8D869A2821473000A9E99F /* LoginSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneInteractor.swift; sourceTree = "<group>"; };
 		EE8D869B2821473000A9E99F /* LoginSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneConfigurator.swift; sourceTree = "<group>"; };
+		EE8D86B228214B0200A9E99F /* LoginTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTitleView.swift; sourceTree = "<group>"; };
 		EE975C692820DDA700EBB527 /* EZY-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EZY-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE975C6C2820DDA700EBB527 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 				EE975CB42820EE4200EBB527 /* Reusable in Frameworks */,
 				EE975C8E2820E79500EBB527 /* Then in Frameworks */,
 				EE975CBC2820F1BC00EBB527 /* IQKeyboardManagerSwift in Frameworks */,
+				EE8D86B528214C6100A9E99F /* SnapKit in Frameworks */,
 				EE975CAD2820EB5D00EBB527 /* RxCocoa in Frameworks */,
+				EECDAF0A282169C10048306E /* EZYUI in Frameworks */,
 				EE975CAB2820EB5900EBB527 /* RxSwift in Frameworks */,
 				EE975CB62820EEBF00EBB527 /* Base in Frameworks */,
 				EE975CBE28210AB600EBB527 /* UIUtil in Frameworks */,
@@ -76,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE8D86B128214AF100A9E99F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE8D86B228214B0200A9E99F /* LoginTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EE975C602820DDA700EBB527 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +189,7 @@
 		EE975C882820E64600EBB527 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
+				EE8D86B128214AF100A9E99F /* View */,
 				EE8D86962821473000A9E99F /* LoginScenePresenter.swift */,
 				EE8D86972821473000A9E99F /* LoginSceneWorker.swift */,
 				EE8D86982821473000A9E99F /* LoginSceneRouter.swift */,
@@ -231,6 +246,8 @@
 				EE975CC8282112FF00EBB527 /* Lottie */,
 				EE975CCB2821133C00EBB527 /* UIGradient */,
 				EE975CDF28211BF500EBB527 /* Inject */,
+				EE8D86B428214C6100A9E99F /* SnapKit */,
+				EECDAF09282169C10048306E /* EZYUI */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -304,6 +321,7 @@
 				EE8D869D2821473000A9E99F /* LoginSceneWorker.swift in Sources */,
 				EE8D869F2821473000A9E99F /* LoginSceneViewController.swift in Sources */,
 				EE8D869E2821473000A9E99F /* LoginSceneRouter.swift in Sources */,
+				EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
@@ -632,6 +650,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EE8D86B428214C6100A9E99F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE975C8B2820E75F00EBB527 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		EE975C8D2820E79500EBB527 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE975C8C2820E79500EBB527 /* XCRemoteSwiftPackageReference "Then" */;
@@ -699,6 +722,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */;
 			productName = Inject;
+		};
+		EECDAF09282169C10048306E /* EZYUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EZYUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

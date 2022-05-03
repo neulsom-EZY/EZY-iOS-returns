@@ -14,6 +14,9 @@ let package = Package(
         .library(
             name: "UIUtil",
             targets: ["UIUtil"]),
+        .library(
+            name: "EZYUI",
+            targets: ["EZYUI"]),
 //        .library(
 //            name: "RxUtil",
 //            targets: ["RxUtil"]),
@@ -34,11 +37,13 @@ let package = Package(
         .target(
             name: "UIUtil",
             dependencies: []),
+        .target(
+            name: "EZYUI",
+            dependencies: []),
 //        .target(
 //            name: "RxUtil",
 //            dependencies: [
 //                "RxSwift",
-//                "RxFlow"
 //            ]),
     ]
 )

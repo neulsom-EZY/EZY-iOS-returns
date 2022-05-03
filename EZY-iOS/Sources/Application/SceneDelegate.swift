@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import Inject
+import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func coordinatorToAppFlow(with scene : UIWindowScene){
         let window = UIWindow(windowScene: scene)
         self.window = window
-        let navController = UINavigationController(rootViewController: LoginSceneViewController())
+        let navController = UINavigationController(
+            rootViewController: AppDelegate.container.resolve(LoginSceneViewController.self)!
+        )
+        
         //MARK: - Inject
         window.rootViewController = Inject.ViewControllerHost(navController)
         window.makeKeyAndVisible()
