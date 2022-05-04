@@ -16,6 +16,7 @@ final class UserCustomButton : UIButton{
         setTitle(placeholder, for: .normal)
         setTitleColor(.white, for: .normal)
         layer.cornerRadius = 10
+        alpha = 0.5
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
@@ -24,6 +25,5 @@ final class UserCustomButton : UIButton{
     override func layoutSubviews() {
         super.layoutSubviews()
         backgroundColor = UIColor.fromGradientWithDirection(.leftToRight, frame: self.bounds, colors: [.EZY_Pupple,.EZY_DeepBlue,.EZY_SkyBlue])
-        alpha = 0.5
     }
 }

@@ -19,6 +19,7 @@ final class UserTextField : UIView{
     
     private let textField = UITextField().then{
         $0.textColor = .black
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
         $0.setPlaceholder(color: .lightGray)
     }
     
