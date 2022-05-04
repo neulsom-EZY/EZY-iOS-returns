@@ -23,8 +23,49 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit",
       "state" : {
+<<<<<<< HEAD
         "revision" : "f222cbdf325885926566172f6f5f06af95473158",
         "version" : "5.6.0"
+=======
+        "branch" : "develop",
+        "revision" : "07c5d1f6044701d97e94dc11157259e8811977be"
+      }
+    },
+    {
+      "identity" : "swinject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swinject/Swinject.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "45e9e99b05e356f2d68d170d695387a8eabf8694"
+      }
+    },
+    {
+      "identity" : "switch-animations",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jwd-ali/Switch-Animations.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "039320e478d13c40871c3ee7de996eae8ffeecdd"
+      }
+    },
+    {
+      "identity" : "then",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/Then",
+      "state" : {
+        "branch" : "master",
+        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
+      }
+    },
+    {
+      "identity" : "uigradient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dqhieu/UIGradient.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "80d42010d24dbe676de684c0fcf4087f5cafe058"
+>>>>>>> 91d87e0bfa6b6682f7fe43387c83965c94d89c99
       }
     }
   ],
