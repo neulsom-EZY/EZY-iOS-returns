@@ -22,9 +22,7 @@ final class LoginSceneViewController: BaseViewController {
     
     private lazy var logger = Logger(subsystem: String(describing: self), category: "UI")
     
-    private let titleView = LoginTitleView().then{
-        $0.backgroundColor = .red
-    }
+    private let titleView = LoginTitleView()
     
     private let nickNameTextField = HoshiTextField(frame: .zero).then{
         $0.placeholderColor = .EZY_Pupple
@@ -42,7 +40,6 @@ final class LoginSceneViewController: BaseViewController {
         titleView.snp.makeConstraints{
             $0.top.equalToSuperview().offset(bounds.height/6.6)
             $0.left.equalToSuperview().offset(bounds.width/7.98)
-//            $0.left.right.equalToSuperview().offset(ConstraintOffsetTarget)
         }
         nickNameTextField.snp.makeConstraints {
             $0.top.equalTo(titleView.snp.bottom)
