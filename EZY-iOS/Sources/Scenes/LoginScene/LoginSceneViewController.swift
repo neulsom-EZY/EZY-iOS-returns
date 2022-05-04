@@ -9,11 +9,12 @@ import Base
 import RxSwift
 import Then
 import SnapKit
+import TextFieldEffects
 
 protocol LoginSceneViewControllerInput: AnyObject {}
 
 typealias LoginSceneViewControllerOutput
-    = LoginSceneInteractorInput
+= LoginSceneInteractorInput
 
 final class LoginSceneViewController: BaseViewController {
     var interactor: LoginSceneViewControllerOutput?
@@ -21,21 +22,33 @@ final class LoginSceneViewController: BaseViewController {
     
     private lazy var logger = Logger(subsystem: String(describing: self), category: "UI")
     
-    private let titleView = LoginTitleView()
+    private let titleView = LoginTitleView().then{
+        $0.backgroundColor = .red
+    }
     
+    private let nickNameTextField = HoshiTextField(frame: .zero).then{
+        $0.placeholderColor = .EZY_Pupple
+    }
     //MARK: - Configure
     override func configureUI() {
-
+        
     }
     //MARK: - AddView
     override func addView() {
-        view.addSubviews(titleView)
+        view.addSubviews(titleView, nickNameTextField)
     }
     //MARK: - SetLayout
     override func setLayout() {
         titleView.snp.makeConstraints{
-            $0.top.equalToSuperview().offset(self.view.frame.height/6.6)
-            $0.left.equalToSuperview().offset(self.view.frame.width/7.98)
+            $0.top.equalToSuperview().offset(bounds.height/6.6)
+            $0.left.equalToSuperview().offset(bounds.width/7.98)
+//            $0.left.right.equalToSuperview().offset(ConstraintOffsetTarget)
+        }
+        nickNameTextField.snp.makeConstraints {
+            $0.top.equalTo(titleView.snp.bottom)
+            $0.centerX.equalToSuperview()
+            $0.height.equalToSuperview()
+            $0.width.equalTo(30)
         }
     }
 }

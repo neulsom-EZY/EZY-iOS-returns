@@ -14,7 +14,6 @@
 		EE8D86A02821473000A9E99F /* LoginSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D869A2821473000A9E99F /* LoginSceneInteractor.swift */; };
 		EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D869B2821473000A9E99F /* LoginSceneConfigurator.swift */; };
 		EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D86B228214B0200A9E99F /* LoginTitleView.swift */; };
-		EE8D86B528214C6100A9E99F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE8D86B428214C6100A9E99F /* SnapKit */; };
 		EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6C2820DDA700EBB527 /* AppDelegate.swift */; };
 		EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE975C6E2820DDA700EBB527 /* SceneDelegate.swift */; };
 		EE975C762820DDA900EBB527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE975C752820DDA900EBB527 /* Assets.xcassets */; };
@@ -37,6 +36,7 @@
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
 		EECDAF1028216CE50048306E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0F28216CE50048306E /* TextFieldEffects */; };
+		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,11 +73,11 @@
 				EE975CB42820EE4200EBB527 /* Reusable in Frameworks */,
 				EE975C8E2820E79500EBB527 /* Then in Frameworks */,
 				EE975CBC2820F1BC00EBB527 /* IQKeyboardManagerSwift in Frameworks */,
-				EE8D86B528214C6100A9E99F /* SnapKit in Frameworks */,
 				EE975CAD2820EB5D00EBB527 /* RxCocoa in Frameworks */,
 				EECDAF0A282169C10048306E /* EZYUI in Frameworks */,
 				EE975CAB2820EB5900EBB527 /* RxSwift in Frameworks */,
 				EE975CB62820EEBF00EBB527 /* Base in Frameworks */,
+				EECDAF162821776C0048306E /* SnapKit in Frameworks */,
 				EE975CBE28210AB600EBB527 /* UIUtil in Frameworks */,
 				EE975C962820E88300EBB527 /* PanModal in Frameworks */,
 			);
@@ -250,10 +250,10 @@
 				EE975CC8282112FF00EBB527 /* Lottie */,
 				EE975CCB2821133C00EBB527 /* UIGradient */,
 				EE975CDF28211BF500EBB527 /* Inject */,
-				EE8D86B428214C6100A9E99F /* SnapKit */,
 				EECDAF09282169C10048306E /* EZYUI */,
 				EECDAF0C28216AD40048306E /* Switches */,
 				EECDAF0F28216CE50048306E /* TextFieldEffects */,
+				EECDAF152821776C0048306E /* SnapKit */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -285,7 +285,6 @@
 			mainGroup = EE975C602820DDA700EBB527;
 			packageReferences = (
 				EE975C8A2820E74300EBB527 /* XCRemoteSwiftPackageReference "RxSwift" */,
-				EE975C8B2820E75F00EBB527 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				EE975C8C2820E79500EBB527 /* XCRemoteSwiftPackageReference "Then" */,
 				EE975C8F2820E7DA00EBB527 /* XCRemoteSwiftPackageReference "Moya" */,
 				EE975C902820E81C00EBB527 /* XCRemoteSwiftPackageReference "keychain-swift" */,
@@ -299,6 +298,7 @@
 				EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */,
 				EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */,
 				EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -559,14 +559,6 @@
 				kind = branch;
 			};
 		};
-		EE975C8B2820E75F00EBB527 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
 		EE975C8C2820E79500EBB527 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -671,14 +663,17 @@
 				kind = branch;
 			};
 		};
+		EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EE8D86B428214C6100A9E99F /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE975C8B2820E75F00EBB527 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
 		EE975C8D2820E79500EBB527 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE975C8C2820E79500EBB527 /* XCRemoteSwiftPackageReference "Then" */;
@@ -760,6 +755,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
+		};
+		EECDAF152821776C0048306E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
