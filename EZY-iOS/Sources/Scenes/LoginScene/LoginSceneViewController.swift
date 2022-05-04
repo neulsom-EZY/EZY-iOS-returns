@@ -31,14 +31,11 @@ final class LoginSceneViewController: BaseViewController {
     private let loginButton = UserCustomButton(placeholder: "로그인")
     private let doNotHaveAccountButton =  textButton(title: "아직 회원이 아니신가요?", fontSize: 12)
     
-    //MARK: - Configure
-    override func configureUI() {
-
-    }
     //MARK: - AddView
     override func addView() {
         view.addSubviews(titleView, nickNameTextField,passwordTextField,forgetPassword,forgetNickName,loginButton,doNotHaveAccountButton)
     }
+    
     //MARK: - SetLayout
     override func setLayout() {
         titleView.snp.makeConstraints{
@@ -75,7 +72,6 @@ final class LoginSceneViewController: BaseViewController {
         }
     }
 }
-
 
 // swiftlint:disable colon
 extension LoginSceneViewController:
