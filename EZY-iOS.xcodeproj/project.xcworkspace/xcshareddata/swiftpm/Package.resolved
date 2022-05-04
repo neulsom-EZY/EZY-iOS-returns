@@ -127,15 +127,6 @@
       }
     },
     {
-      "identity" : "textfieldeffects",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/raulriera/TextFieldEffects.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d3833902b69eaf7f0eff401d1abc443beb176fd4"
-      }
-    },
-    {
       "identity" : "then",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/devxoul/Then",
