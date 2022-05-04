@@ -14,7 +14,7 @@ final class LoginTitleView : UIView{
     private lazy var titleLabel = UILabel().then {
         $0.text = "EZY"
         $0.font = .systemFont(ofSize: 38, weight: .heavy)
-        $0.updateGradientTextColor_vertical(gradientColors: [ UIColor.EZY_SkyBlue,UIColor.EZY_Pupple])
+        $0.updateGradientTextColor_vertical(gradientColors: [ UIColor.EZY_SkyBlue,UIColor.EZY_HeavyPupple])
     }
 
     private let subLabel = UILabel().then {

@@ -1,5 +1,5 @@
 //
-//  LoginTextField.swift
+//  UserTextField.swift
 //  EZY-iOS
 //
 //  Created by Ji-hoon Ahn on 2022/05/04.
@@ -10,11 +10,10 @@ import EZYUI
 import Then
 import UIUtil
 
-final class LoginTextField : UIView{
+final class UserTextField : UIView{
     
     //MARK: - Properties
     private let  titleLabel = UILabel().then {
-        $0.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
         $0.textColor = .EZY_Pupple
     }
     
@@ -28,9 +27,14 @@ final class LoginTextField : UIView{
     }
     
     //MARK: - initalizer
-    init(titleText : String ,placeholder : String?){
+    init(
+        titleText : String ,
+        titleFont : CGFloat = 10,
+        placeholder : String?
+    ){
         super.init(frame: .zero)
         titleLabel.text = titleText
+        titleLabel.font = UIFont.systemFont(ofSize: titleFont, weight: .semibold)
         textField.placeholder = placeholder
         addView()
     }

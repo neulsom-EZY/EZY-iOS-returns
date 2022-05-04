@@ -9,10 +9,11 @@ import UIKit
 
 final class textButton : UIButton{
     
-    init(title : String){
+    init(title : String,fontSize : CGFloat){
         super.init(frame: .zero)
+        titleLabel?.font = .systemFont(ofSize: fontSize, weight: .semibold)
         setTitle(title, for: .normal)
-        setTitleColor(.white, for: .normal)
+        setTitleColor(.lightGray, for: .normal)
     }
     
     @available(*,unavailable)

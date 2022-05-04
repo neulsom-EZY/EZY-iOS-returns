@@ -36,8 +36,9 @@
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
 		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
-		EEF7B6C028224DDE0073FC4C /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */; };
+		EEF7B6C028224DDE0073FC4C /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */; };
 		EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C1282256F20073FC4C /* textButton.swift */; };
+		EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C428225A600073FC4C /* UserCustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +57,9 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
-		EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 		EEF7B6C1282256F20073FC4C /* textButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textButton.swift; sourceTree = "<group>"; };
+		EEF7B6C428225A600073FC4C /* UserCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				EE8D86B228214B0200A9E99F /* LoginTitleView.swift */,
-				EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */,
 				EEF7B6C1282256F20073FC4C /* textButton.swift */,
 			);
 			path = View;
@@ -134,6 +135,7 @@
 				EE975C862820E63200EBB527 /* Services */,
 				EE975C852820E62B00EBB527 /* Models */,
 				EE975C842820E59700EBB527 /* Scenes */,
+				EEF7B6C3282259070073FC4C /* View */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -221,6 +223,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEF7B6C3282259070073FC4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */,
+				EEF7B6C428225A600073FC4C /* UserCustomButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,10 +345,11 @@
 				EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
-				EEF7B6C028224DDE0073FC4C /* LoginTextField.swift in Sources */,
+				EEF7B6C028224DDE0073FC4C /* UserTextField.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
 				EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */,
 				EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */,
+				EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */,
 				EE8D869C2821473000A9E99F /* LoginScenePresenter.swift in Sources */,
 				EE8D86A02821473000A9E99F /* LoginSceneInteractor.swift in Sources */,
 			);

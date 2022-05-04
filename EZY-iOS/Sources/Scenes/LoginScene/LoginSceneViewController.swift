@@ -24,23 +24,13 @@ final class LoginSceneViewController: BaseViewController {
     
     private let titleView = LoginTitleView()
     
-    private let nickNameTextField = LoginTextField(
-        titleText: "닉네임",
-        placeholder: "닉네임을 입력해주세요."
-    )
+    private let nickNameTextField = UserTextField(titleText: "닉네임",placeholder: "닉네임을 입력해주세요.")
+    private let passwordTextField = UserTextField(titleText: "비밀번호",placeholder: "닉네임을 입력해주세요.")
+    private let forgetPassword = textButton(title: "비밀번호를 잊으셨나요?",fontSize: 10)
+    private let forgetNickName = textButton(title: "닉네임을 잊으셨나요?",fontSize: 10)
     
-    private let passwordTextField = LoginTextField(
-        titleText: "비밀번호",
-        placeholder: "닉네임을 입력해주세요."
-    )
-    
-    private let forgetPassword = UIButton()
-    
-    private let loginButton = UIButton(configuration: .plain()).then{
-        $0.setTitle( "로그인", for: .normal)
-        $0.setTitleColor(.white, for: .normal)
-        $0.backgroundColor = .red
-    }
+    private let loginButton = UserCustomButton(placeholder: "로그인")
+    private let doNotHaveAccountButton =  textButton(title: "아직 회원이 아니신가요?", fontSize: 12)
     
     //MARK: - Configure
     override func configureUI() {
