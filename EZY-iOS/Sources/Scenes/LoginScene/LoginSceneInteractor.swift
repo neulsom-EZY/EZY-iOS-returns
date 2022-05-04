@@ -5,10 +5,11 @@
 
 import Foundation
 
-protocol LoginSceneInteractorInput {}
+typealias LoginSceneInteractorInput = LoginSceneViewControllerOutput
 
-typealias LoginSceneInteractorOutput
-    = LoginSceneInteractorInput
+protocol LoginSceneInteractorOutput : AnyObject {
+    
+}
 
 final class LoginSceneInteractor {
     var presenter: LoginScenePresenterInput?

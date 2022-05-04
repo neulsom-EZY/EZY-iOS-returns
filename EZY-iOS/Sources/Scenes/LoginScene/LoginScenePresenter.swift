@@ -5,10 +5,8 @@
 
 import UIKit
 
-protocol LoginScenePresenterInput {}
-
-typealias LoginScenePresenterOutput
-    = LoginSceneViewControllerInput
+typealias LoginScenePresenterInput = LoginSceneInteractorOutput
+typealias LoginScenePresenterOutput = LoginSceneViewControllerInput
 
 final class LoginScenePresenter {
     weak var viewController: LoginScenePresenterOutput?

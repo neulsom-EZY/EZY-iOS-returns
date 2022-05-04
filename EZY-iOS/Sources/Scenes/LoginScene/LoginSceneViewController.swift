@@ -12,10 +12,13 @@ import Then
 import SnapKit
 import UIGradient
 
-protocol LoginSceneViewControllerInput: AnyObject {}
+protocol LoginSceneViewControllerInput: AnyObject {
+    
+}
 
-typealias LoginSceneViewControllerOutput
-= LoginSceneInteractorInput
+protocol LoginSceneViewControllerOutput: AnyObject {
+
+}
 
 final class LoginSceneViewController: BaseViewController {
     var interactor: LoginSceneViewControllerOutput?
