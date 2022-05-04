@@ -5,7 +5,7 @@
 //
 
 import UIKit
-import UIUtil
+import UIGradient
 import SnapKit
 import EZYUI
 
@@ -13,10 +13,10 @@ final class LoginTitleView : UIView{
     //MARK: - Properties
     private lazy var titleLabel = UILabel().then {
         $0.text = "EZY"
-        $0.font = .boldSystemFont(ofSize: 38)
-        $0.updateGradientTextColor_vertical(gradientColors: [UIColor.EZY_Pupple,UIColor.EZY_SkyBlue])
+        $0.font = .systemFont(ofSize: 38, weight: .heavy)
+        $0.alpha = 0.7
     }
-    
+
     private let subLabel = UILabel().then {
         $0.text = "는"
         $0.font = .systemFont(ofSize: 25, weight: .thin)
@@ -44,6 +44,7 @@ final class LoginTitleView : UIView{
     //MARK: - Layout
     override func layoutSubviews() {
         super.layoutSubviews()
+        setGradient()
         setLayout()
     }
     
@@ -51,6 +52,7 @@ final class LoginTitleView : UIView{
     private func addView(){
         addSubviews(titleLabel,subLabel,textLabel)
     }
+    
     private func setLayout(){
         titleLabel.snp.makeConstraints {
             $0.top.left.equalToSuperview()
@@ -63,4 +65,9 @@ final class LoginTitleView : UIView{
             $0.top.equalTo(titleLabel.snp.bottom)
         }
     }
+    
+    private func setGradient(){
+        titleLabel.textColor = UIColor.fromGradientWithDirection(.topToBottom, frame: titleLabel.bounds, colors: [.EZY_SkyBlue,.EZY_HeavyPupple])
+    }
+    
 }
