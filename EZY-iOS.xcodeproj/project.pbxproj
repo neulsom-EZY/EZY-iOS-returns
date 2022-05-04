@@ -35,8 +35,9 @@
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
-		EECDAF1028216CE50048306E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0F28216CE50048306E /* TextFieldEffects */; };
 		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
+		EEF7B6C028224DDE0073FC4C /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */; };
+		EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C1282256F20073FC4C /* textButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,8 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		EEF7B6C1282256F20073FC4C /* textButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +68,6 @@
 				EE975CC9282112FF00EBB527 /* Lottie in Frameworks */,
 				EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */,
 				EE975CE028211BF500EBB527 /* Inject in Frameworks */,
-				EECDAF1028216CE50048306E /* TextFieldEffects in Frameworks */,
 				EECDAF0D28216AD40048306E /* Switches in Frameworks */,
 				EE975CAF2820EB6300EBB527 /* RxMoya in Frameworks */,
 				EE975C922820E81C00EBB527 /* KeychainSwift in Frameworks */,
@@ -90,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				EE8D86B228214B0200A9E99F /* LoginTitleView.swift */,
+				EEF7B6BF28224DDE0073FC4C /* LoginTextField.swift */,
+				EEF7B6C1282256F20073FC4C /* textButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,7 +256,6 @@
 				EE975CDF28211BF500EBB527 /* Inject */,
 				EECDAF09282169C10048306E /* EZYUI */,
 				EECDAF0C28216AD40048306E /* Switches */,
-				EECDAF0F28216CE50048306E /* TextFieldEffects */,
 				EECDAF152821776C0048306E /* SnapKit */,
 			);
 			productName = "EZY-iOS";
@@ -297,7 +300,6 @@
 				EE975CCA2821133C00EBB527 /* XCRemoteSwiftPackageReference "UIGradient" */,
 				EE975CDE28211BF500EBB527 /* XCRemoteSwiftPackageReference "Inject" */,
 				EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */,
-				EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
@@ -332,7 +334,9 @@
 				EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
+				EEF7B6C028224DDE0073FC4C /* LoginTextField.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
+				EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */,
 				EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */,
 				EE8D869C2821473000A9E99F /* LoginScenePresenter.swift in Sources */,
 				EE8D86A02821473000A9E99F /* LoginSceneInteractor.swift in Sources */,
@@ -655,14 +659,6 @@
 				kind = branch;
 			};
 		};
-		EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -750,11 +746,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EECDAF0B28216AD40048306E /* XCRemoteSwiftPackageReference "Switch-Animations" */;
 			productName = Switches;
-		};
-		EECDAF0F28216CE50048306E /* TextFieldEffects */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EECDAF0E28216CE50048306E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
-			productName = TextFieldEffects;
 		};
 		EECDAF152821776C0048306E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
