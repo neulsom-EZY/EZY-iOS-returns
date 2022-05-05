@@ -8,6 +8,7 @@ import os.log
 import Base
 import RxSwift
 import RxCocoa
+import RxRelay
 import Then
 import SnapKit
 import UIGradient
@@ -17,7 +18,9 @@ protocol LoginSceneViewControllerInput: AnyObject {
 }
 
 protocol LoginSceneViewControllerOutput: AnyObject {
-
+    var nickNameTextRelay : BehaviorRelay<String> { get }
+    var pwTextRelay : BehaviorRelay<String> { get }
+    func isValid() -> Observable<Bool>
 }
 
 final class LoginSceneViewController: BaseViewController {
@@ -33,10 +36,14 @@ final class LoginSceneViewController: BaseViewController {
     private let forgetNickName = textButton(title: "닉네임을 잊으셨나요?",fontSize: 10)
     private let loginButton = UserCustomButton(placeholder: "로그인")
     private let doNotHaveAccountButton =  textButton(title: "아직 회원이 아니신가요?", fontSize: 12)
-    
+    private let passwordHideButton = UIButton().then{
+        $0.setImage(UIImage(systemName: "eye"), for: .normal)
+        $0.tintColor = .lightGray
+    }
+       
     //MARK: - AddView
     override func addView() {
-        view.addSubviews(titleView, nickNameTextField,passwordTextField,forgetPassword,forgetNickName,loginButton,doNotHaveAccountButton)
+        view.addSubviews(titleView, nickNameTextField,passwordTextField,passwordHideButton,forgetPassword,forgetNickName,loginButton,doNotHaveAccountButton)
     }
     
     //MARK: - SetLayout
@@ -54,6 +61,10 @@ final class LoginSceneViewController: BaseViewController {
             $0.top.equalTo(nickNameTextField.snp.bottom).offset(bounds.height/30)
             $0.left.right.equalTo(nickNameTextField)
             $0.height.equalTo(nickNameTextField)
+        }
+        passwordHideButton.snp.makeConstraints{
+            $0.bottom.equalTo(passwordTextField).inset(10)
+            $0.right.equalTo(passwordTextField.snp.right)
         }
         forgetPassword.snp.makeConstraints {
             $0.left.equalTo(passwordTextField)
@@ -73,6 +84,10 @@ final class LoginSceneViewController: BaseViewController {
             $0.bottom.equalToSuperview().inset(bounds.height/12.8)
             $0.centerX.equalToSuperview()
         }
+    }
+    override func bindView() {
+        
+        
     }
 }
 

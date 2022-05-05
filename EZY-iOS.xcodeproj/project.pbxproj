@@ -33,10 +33,10 @@
 		EE975CC9282112FF00EBB527 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CC8282112FF00EBB527 /* Lottie */; };
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
+		EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FA2823CC5100D38991 /* UserTextField.swift */; };
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
 		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
-		EEF7B6C028224DDE0073FC4C /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */; };
 		EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C1282256F20073FC4C /* textButton.swift */; };
 		EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C428225A600073FC4C /* UserCustomButton.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
-		EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
+		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 		EEF7B6C1282256F20073FC4C /* textButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textButton.swift; sourceTree = "<group>"; };
 		EEF7B6C428225A600073FC4C /* UserCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,8 +228,8 @@
 		EEF7B6C3282259070073FC4C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EEF7B6BF28224DDE0073FC4C /* UserTextField.swift */,
 				EEF7B6C428225A600073FC4C /* UserCustomButton.swift */,
+				EEA959FA2823CC5100D38991 /* UserTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,9 +343,9 @@
 				EE8D869F2821473000A9E99F /* LoginSceneViewController.swift in Sources */,
 				EE8D869E2821473000A9E99F /* LoginSceneRouter.swift in Sources */,
 				EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */,
+				EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
-				EEF7B6C028224DDE0073FC4C /* UserTextField.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
 				EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */,
 				EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */,

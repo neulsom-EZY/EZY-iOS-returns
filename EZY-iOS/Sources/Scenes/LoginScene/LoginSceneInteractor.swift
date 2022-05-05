@@ -4,6 +4,8 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
 typealias LoginSceneInteractorInput = LoginSceneViewControllerOutput
 
@@ -18,4 +20,19 @@ final class LoginSceneInteractor {
 
 // swiftlint:disable colon
 extension LoginSceneInteractor:
-    LoginSceneInteractorInput {}
+    LoginSceneInteractorInput {
+    var nickNameTextRelay: BehaviorRelay<String> {
+        return.init(value: "")
+    }
+    
+    var pwTextRelay: BehaviorRelay<String> {
+        return .init(value: "")
+    }
+    
+    func isValid() -> Observable<Bool> {
+        return Observable.combineLatest(nickNameTextRelay, pwTextRelay).map { userName , password in
+            return userName.count > 0 && userName.contains("@") && userName.contains(".") && password.count > 0
+        }
+    }
+    
+}

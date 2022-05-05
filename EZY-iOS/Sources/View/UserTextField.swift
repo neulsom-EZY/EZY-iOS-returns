@@ -10,17 +10,11 @@ import EZYUI
 import Then
 import UIUtil
 
-final class UserTextField : UIView{
+final class UserTextField : UITextField{
     
     //MARK: - Properties
     private let  titleLabel = UILabel().then {
         $0.textColor = .EZY_Pupple
-    }
-    
-    private let textField = UITextField().then{
-        $0.textColor = .black
-        $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.setPlaceholder(color: .lightGray)
     }
     
     private let divider = UIView().then{
@@ -36,7 +30,10 @@ final class UserTextField : UIView{
         super.init(frame: .zero)
         titleLabel.text = titleText
         titleLabel.font = UIFont.systemFont(ofSize: titleFont, weight: .semibold)
-        textField.placeholder = placeholder
+        self.placeholder = placeholder
+        self.textColor = .black
+        self.font = .systemFont(ofSize: 14, weight: .regular)
+        self.setPlaceholder(color: .lightGray)
         addView()
     }
     
@@ -53,20 +50,15 @@ final class UserTextField : UIView{
     
     //MARK: - Method
     private func addView(){
-        addSubviews(titleLabel,textField,divider)
+        addSubviews(titleLabel,divider)
     }
     
     private func setLayout(){
         titleLabel.snp.makeConstraints {
             $0.top.left.equalToSuperview()
         }
-        textField.snp.makeConstraints{
-            $0.top.equalTo(titleLabel.snp.bottom).offset(10)
-            $0.width.centerX.equalToSuperview()
-            $0.height.equalTo(18)
-        }
         divider.snp.makeConstraints {
-            $0.top.equalTo(textField.snp.bottom).offset(10)
+            $0.bottom.equalToSuperview()
             $0.width.centerX.equalToSuperview()
             $0.height.equalTo(2)
         }
