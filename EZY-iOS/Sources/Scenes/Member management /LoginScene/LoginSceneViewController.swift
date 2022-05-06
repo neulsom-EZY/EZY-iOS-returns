@@ -14,13 +14,16 @@ import SnapKit
 import UIGradient
 
 protocol LoginSceneViewControllerInput: AnyObject {
-    
+    func showLoginSuccess()
+    func doNotHaveAccount()
 }
 
 protocol LoginSceneViewControllerOutput: AnyObject {
     var nickNameTextRelay : BehaviorRelay<String> { get }
     var pwTextRelay : BehaviorRelay<String> { get }
     func isValid() -> Observable<Bool>
+    func tryToLogin()
+    func doNotHaveAccount()
 }
 
 final class LoginSceneViewController: BaseViewController {
@@ -86,13 +89,44 @@ final class LoginSceneViewController: BaseViewController {
         }
     }
     override func bindView() {
-        
-        
+        nickNameTextField.rx.text
+            .orEmpty
+            .bind(to: interactor?.nickNameTextRelay ?? BehaviorRelay<String>(value: ""))
+            .disposed(by: disposeBag)
+        passwordTextField.rx.text
+            .orEmpty
+            .bind(to: interactor?.nickNameTextRelay ?? BehaviorRelay<String>(value: ""))
+            .disposed(by: disposeBag)
     }
+    override func bindAction() {
+        loginButton.rx.tap
+            .subscribe(onNext:{
+                self.router?.showLoginSuccess()
+            }).disposed(by: disposeBag)
+        
+        doNotHaveAccountButton.rx.tap.observe(on: MainScheduler.instance)
+            .subscribe(onNext:{
+                self.router?.doNotHaveAcount()
+            }).disposed(by: disposeBag)
+    }
+    override func bindState() {
+        interactor?.isValid()
+            .bind(to: loginButton.rx.isEnabled)
+            .disposed(by: disposeBag)
+    }
+    
 }
 
 // swiftlint:disable colon
 extension LoginSceneViewController:
     LoginSceneViewControllerInput {
+    func doNotHaveAccount() {
+        print("Router.DoNotHavAccount")
+        router?.doNotHaveAcount()
+    }
     
+    func showLoginSuccess() {
+        logger.info("logged : LoginSuccess")
+        router?.showLoginSuccess()
+    }
 }

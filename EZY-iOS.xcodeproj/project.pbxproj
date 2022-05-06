@@ -33,7 +33,14 @@
 		EE975CC9282112FF00EBB527 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CC8282112FF00EBB527 /* Lottie */; };
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
+		EEA801842825783600F5C99C /* LoginSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801832825783600F5C99C /* LoginSceneFactory.swift */; };
 		EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FA2823CC5100D38991 /* UserTextField.swift */; };
+		EEA95A052823E7EA00D38991 /* NickNameSettingScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */; };
+		EEA95A062823E7EA00D38991 /* NickNameSettingSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */; };
+		EEA95A072823E7EA00D38991 /* NickNameSettingSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A012823E7EA00D38991 /* NickNameSettingSceneRouter.swift */; };
+		EEA95A082823E7EA00D38991 /* NickNameSettingSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A022823E7EA00D38991 /* NickNameSettingSceneViewController.swift */; };
+		EEA95A092823E7EA00D38991 /* NickNameSettingSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A032823E7EA00D38991 /* NickNameSettingSceneInteractor.swift */; };
+		EEA95A0A2823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A042823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift */; };
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
 		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
@@ -57,7 +64,14 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		EEA801832825783600F5C99C /* LoginSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneFactory.swift; sourceTree = "<group>"; };
 		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
+		EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingScenePresenter.swift; sourceTree = "<group>"; };
+		EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneWorker.swift; sourceTree = "<group>"; };
+		EEA95A012823E7EA00D38991 /* NickNameSettingSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneRouter.swift; sourceTree = "<group>"; };
+		EEA95A022823E7EA00D38991 /* NickNameSettingSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneViewController.swift; sourceTree = "<group>"; };
+		EEA95A032823E7EA00D38991 /* NickNameSettingSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneInteractor.swift; sourceTree = "<group>"; };
+		EEA95A042823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneConfigurator.swift; sourceTree = "<group>"; };
 		EEF7B6C1282256F20073FC4C /* textButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textButton.swift; sourceTree = "<group>"; };
 		EEF7B6C428225A600073FC4C /* UserCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +147,7 @@
 				EE975C832820E53F00EBB527 /* Application */,
 				EE975C872820E63B00EBB527 /* Managers */,
 				EE975C862820E63200EBB527 /* Services */,
+				EEA95A0B2824276C00D38991 /* Factories */,
 				EE975C852820E62B00EBB527 /* Models */,
 				EE975C842820E59700EBB527 /* Scenes */,
 				EEF7B6C3282259070073FC4C /* View */,
@@ -170,7 +185,7 @@
 		EE975C842820E59700EBB527 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EE975C882820E64600EBB527 /* LoginScene */,
+				EEA959FC2823E78500D38991 /* Member management  */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -223,6 +238,44 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA959FC2823E78500D38991 /* Member management  */ = {
+			isa = PBXGroup;
+			children = (
+				EE975C882820E64600EBB527 /* LoginScene */,
+				EEA959FD2823E7A300D38991 /* Join MemberShip */,
+			);
+			path = "Member management ";
+			sourceTree = "<group>";
+		};
+		EEA959FD2823E7A300D38991 /* Join MemberShip */ = {
+			isa = PBXGroup;
+			children = (
+				EEA959FE2823E7C400D38991 /* NickNameSettingScene */,
+			);
+			path = "Join MemberShip";
+			sourceTree = "<group>";
+		};
+		EEA959FE2823E7C400D38991 /* NickNameSettingScene */ = {
+			isa = PBXGroup;
+			children = (
+				EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */,
+				EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */,
+				EEA95A012823E7EA00D38991 /* NickNameSettingSceneRouter.swift */,
+				EEA95A022823E7EA00D38991 /* NickNameSettingSceneViewController.swift */,
+				EEA95A032823E7EA00D38991 /* NickNameSettingSceneInteractor.swift */,
+				EEA95A042823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift */,
+			);
+			path = NickNameSettingScene;
+			sourceTree = "<group>";
+		};
+		EEA95A0B2824276C00D38991 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				EEA801832825783600F5C99C /* LoginSceneFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		EEF7B6C3282259070073FC4C /* View */ = {
@@ -343,12 +396,19 @@
 				EE8D869F2821473000A9E99F /* LoginSceneViewController.swift in Sources */,
 				EE8D869E2821473000A9E99F /* LoginSceneRouter.swift in Sources */,
 				EE8D86B328214B0200A9E99F /* LoginTitleView.swift in Sources */,
+				EEA95A052823E7EA00D38991 /* NickNameSettingScenePresenter.swift in Sources */,
 				EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
+				EEA95A0A2823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift in Sources */,
+				EEA95A092823E7EA00D38991 /* NickNameSettingSceneInteractor.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
 				EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */,
 				EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */,
+				EEA801842825783600F5C99C /* LoginSceneFactory.swift in Sources */,
+				EEA95A082823E7EA00D38991 /* NickNameSettingSceneViewController.swift in Sources */,
+				EEA95A062823E7EA00D38991 /* NickNameSettingSceneWorker.swift in Sources */,
+				EEA95A072823E7EA00D38991 /* NickNameSettingSceneRouter.swift in Sources */,
 				EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */,
 				EE8D869C2821473000A9E99F /* LoginScenePresenter.swift in Sources */,
 				EE8D86A02821473000A9E99F /* LoginSceneInteractor.swift in Sources */,

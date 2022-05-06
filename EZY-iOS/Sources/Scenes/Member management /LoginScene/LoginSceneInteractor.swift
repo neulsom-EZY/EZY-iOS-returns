@@ -10,7 +10,8 @@ import RxRelay
 typealias LoginSceneInteractorInput = LoginSceneViewControllerOutput
 
 protocol LoginSceneInteractorOutput : AnyObject {
-    
+    func showLoginSuccess()
+    func doNotHaveAccount()
 }
 
 final class LoginSceneInteractor {
@@ -21,6 +22,7 @@ final class LoginSceneInteractor {
 // swiftlint:disable colon
 extension LoginSceneInteractor:
     LoginSceneInteractorInput {
+    
     var nickNameTextRelay: BehaviorRelay<String> {
         return.init(value: "")
     }
@@ -34,5 +36,11 @@ extension LoginSceneInteractor:
             return userName.count > 0 && userName.contains("@") && userName.contains(".") && password.count > 0
         }
     }
-    
+    func tryToLogin() {
+        self.presenter?.showLoginSuccess()
+    }
+    func doNotHaveAccount() {
+        print("Presenter -> DoNotHaveAccount")
+        self.presenter?.doNotHaveAccount()
+    }
 }

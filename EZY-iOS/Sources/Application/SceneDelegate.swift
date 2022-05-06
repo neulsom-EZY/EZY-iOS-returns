@@ -22,9 +22,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func coordinatorToAppFlow(with scene : UIWindowScene){
         let window = UIWindow(windowScene: scene)
+
         self.window = window
+        let sceneFactory  = DefaultLoginSceneFactory()
+        sceneFactory.configurator = DefaultLoginSceneConfigurator(sceneFactory: sceneFactory)
         let navController = UINavigationController(
-            rootViewController: AppDelegate.container.resolve(LoginSceneViewController.self)!
+            rootViewController: sceneFactory.makeLoginScene()
+                //AppDelegate.container.resolve(LoginSceneViewController.self)!
         )
         
         //MARK: - Inject

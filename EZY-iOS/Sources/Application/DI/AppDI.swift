@@ -7,8 +7,11 @@ extension Container{
     }
     
     private func registerVC(){
-        self.register(LoginSceneViewController.self){ r in
+        self.register(LoginSceneViewController.self){ _ in
             return LoginSceneViewController()
+        }
+        self.register(NickNameSettingSceneViewController.self) { _ in
+            return NickNameSettingSceneViewController()
         }
     }
 
