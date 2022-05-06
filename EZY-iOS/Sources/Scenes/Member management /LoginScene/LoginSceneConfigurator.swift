@@ -14,9 +14,9 @@ protocol LoginSceneConfigurator {
 // swiftlint:disable colon
 final class DefaultLoginSceneConfigurator:
     LoginSceneConfigurator {
-    private var sceneFactory : LoginSceneFactory
+    private var sceneFactory : SceneFactory
     
-    init(sceneFactory : LoginSceneFactory){
+    init(sceneFactory : SceneFactory){
         self.sceneFactory = sceneFactory
     }
     
@@ -24,10 +24,10 @@ final class DefaultLoginSceneConfigurator:
     func configured(
         _ viewController: LoginSceneViewController
     ) -> LoginSceneViewController {
-        sceneFactory.configurator = self
+        sceneFactory.loginConfigurator = self
         let interactor = LoginSceneInteractor()
         let presenter = LoginScenePresenter()
-        let router = LoginSceneRouter(sceneFactory: sceneFactory)
+        let router = LoginSceneRouter()
         router.source = viewController
         presenter.viewController = viewController
         interactor.presenter = presenter

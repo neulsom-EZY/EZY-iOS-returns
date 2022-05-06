@@ -8,11 +8,23 @@
 import UIKit
 import Then
 import SnapKit
+import RxSwift
+import RxCocoa
+
+protocol backBtnAction : AnyObject{
+    func backAction()
+}
 
 final class EZYCustomNavigationBar : UIView{
+
+    weak var delegate : backBtnAction?
+    
+    private var disposeBag : DisposeBag = .init()
+
+    
     //MARK: - Properties
     private let backButton = UIButton().then{
-        $0.setImage(UIImage(systemName: "chevron.left"), for: .normal)
+        $0.setImage(UIImage(named: "back_arrow"), for: .normal)
         $0.tintColor = .black
     }
     private let logoImageView = UIImageView(image: UIImage(named: "EZY_LOGO")).then{
@@ -23,11 +35,13 @@ final class EZYCustomNavigationBar : UIView{
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        bindView()
     }
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
+        bindView()
     }
     
     private func setup(){
@@ -43,5 +57,12 @@ final class EZYCustomNavigationBar : UIView{
             $0.center.height.equalToSuperview()
             $0.width.equalTo(84)
         }
+    }
+    
+    private func bindView(){
+        backButton.rx.tap
+            .subscribe(onNext:{ [weak self] in
+                self?.delegate?.backAction()
+            }).disposed(by: disposeBag)
     }
 }

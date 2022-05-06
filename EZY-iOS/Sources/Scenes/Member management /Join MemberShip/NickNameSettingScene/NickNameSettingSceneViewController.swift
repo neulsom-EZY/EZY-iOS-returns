@@ -11,7 +11,9 @@ protocol NickNameSettingSceneViewControllerInput: AnyObject {}
 
 protocol NickNameSettingSceneViewControllerOutput: AnyObject {}
 
-final class NickNameSettingSceneViewController: BaseViewController {
+final class NickNameSettingSceneViewController: BaseViewController,backBtnAction {
+
+    
     var interactor: NickNameSettingSceneViewControllerOutput?
     var router: NickNameSettingSceneRoutingLogic?
     
@@ -24,6 +26,9 @@ final class NickNameSettingSceneViewController: BaseViewController {
         super.configureUI()
         
     }
+    override func delegate() {
+        customNavigationBar.delegate = self
+    }
     override func addView() {
         view.addSubviews(customNavigationBar)
     }
@@ -34,8 +39,20 @@ final class NickNameSettingSceneViewController: BaseViewController {
             $0.height.equalTo(bounds.height/20)
         }
     }
+    func backAction() {
+        router?.backButtonDidTap()
+    }
+
+    override func bindView() {
+        
+    }
+    override func bindAction() {
+        
+    }
 }
 
 // swiftlint:disable colon
 extension NickNameSettingSceneViewController:
-    NickNameSettingSceneViewControllerInput {}
+    NickNameSettingSceneViewControllerInput {
+    
+}

@@ -12,19 +12,13 @@ protocol LoginSceneRoutingLogic {
 
 final class LoginSceneRouter: NSObject {
     weak var source: UIViewController?
-    
-    private let sceneFactory : LoginSceneFactory
-    
-    init(sceneFactory : LoginSceneFactory){
-        self.sceneFactory = sceneFactory
-    }
 }
 
 // swiftlint:disable colon
 extension LoginSceneRouter:
     LoginSceneRoutingLogic {
     func doNotHaveAcount() {
-        let scene = sceneFactory.doNotHaveAcount()
+        let scene = NickNameSettingSceneViewController()
         source?.navigationController?.pushViewController(scene, animated: true)
     }
     

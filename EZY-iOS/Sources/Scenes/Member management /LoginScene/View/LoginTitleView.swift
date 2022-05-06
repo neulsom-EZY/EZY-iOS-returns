@@ -11,7 +11,7 @@ import EZYUI
 
 final class LoginTitleView : UIView{
     //MARK: - Properties
-    private lazy var titleLabel = UILabel().then {
+    private let titleLabel = UILabel().then {
         $0.text = "EZY"
         $0.font = .systemFont(ofSize: 38, weight: .heavy)
         $0.alpha = 0.7

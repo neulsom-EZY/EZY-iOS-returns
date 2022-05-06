@@ -15,7 +15,6 @@ import UIGradient
 
 protocol LoginSceneViewControllerInput: AnyObject {
     func showLoginSuccess()
-    func doNotHaveAccount()
 }
 
 protocol LoginSceneViewControllerOutput: AnyObject {
@@ -23,7 +22,6 @@ protocol LoginSceneViewControllerOutput: AnyObject {
     var pwTextRelay : BehaviorRelay<String> { get }
     func isValid() -> Observable<Bool>
     func tryToLogin()
-    func doNotHaveAccount()
 }
 
 final class LoginSceneViewController: BaseViewController {
@@ -120,10 +118,7 @@ final class LoginSceneViewController: BaseViewController {
 // swiftlint:disable colon
 extension LoginSceneViewController:
     LoginSceneViewControllerInput {
-    func doNotHaveAccount() {
-        logger.info("logged : doNotHavAcount")
-        router?.doNotHaveAcount()
-    }
+
     
     func showLoginSuccess() {
         logger.info("logged : LoginSuccess")

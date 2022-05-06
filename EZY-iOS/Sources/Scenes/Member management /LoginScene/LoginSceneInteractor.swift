@@ -11,7 +11,6 @@ typealias LoginSceneInteractorInput = LoginSceneViewControllerOutput
 
 protocol LoginSceneInteractorOutput : AnyObject {
     func showLoginSuccess()
-    func doNotHaveAccount()
 }
 
 final class LoginSceneInteractor {
@@ -39,8 +38,5 @@ extension LoginSceneInteractor:
     func tryToLogin() {
         self.presenter?.showLoginSuccess()
     }
-    func doNotHaveAccount() {
-        print("Presenter -> DoNotHaveAccount")
-        self.presenter?.doNotHaveAccount()
-    }
+
 }

@@ -14,10 +14,7 @@ final class LoginScenePresenter {
 
 // swiftlint:disable colon
 extension LoginScenePresenter: LoginScenePresenterInput {
-    func doNotHaveAccount() {
-        viewController?.doNotHaveAccount()
-    }
-    
+
     func showLoginSuccess() {
         dispatchPrecondition(condition: .onQueue(.main))
         viewController?.showLoginSuccess()

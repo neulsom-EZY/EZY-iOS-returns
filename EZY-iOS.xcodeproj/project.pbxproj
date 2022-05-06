@@ -33,8 +33,9 @@
 		EE975CC9282112FF00EBB527 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CC8282112FF00EBB527 /* Lottie */; };
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
-		EEA801842825783600F5C99C /* LoginSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801832825783600F5C99C /* LoginSceneFactory.swift */; };
+		EEA801842825783600F5C99C /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801832825783600F5C99C /* SceneFactory.swift */; };
 		EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */; };
+		EEA8019C28259CE900F5C99C /* SceneAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8019B28259CE900F5C99C /* SceneAction.swift */; };
 		EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FA2823CC5100D38991 /* UserTextField.swift */; };
 		EEA95A052823E7EA00D38991 /* NickNameSettingScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */; };
 		EEA95A062823E7EA00D38991 /* NickNameSettingSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */; };
@@ -65,8 +66,9 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
-		EEA801832825783600F5C99C /* LoginSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneFactory.swift; sourceTree = "<group>"; };
+		EEA801832825783600F5C99C /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
 		EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZYCustomNavigationBar.swift; sourceTree = "<group>"; };
+		EEA8019B28259CE900F5C99C /* SceneAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAction.swift; sourceTree = "<group>"; };
 		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 		EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingScenePresenter.swift; sourceTree = "<group>"; };
 		EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneWorker.swift; sourceTree = "<group>"; };
@@ -275,7 +277,8 @@
 		EEA95A0B2824276C00D38991 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				EEA801832825783600F5C99C /* LoginSceneFactory.swift */,
+				EEA8019B28259CE900F5C99C /* SceneAction.swift */,
+				EEA801832825783600F5C99C /* SceneFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -405,11 +408,12 @@
 				EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
 				EEA95A0A2823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift in Sources */,
+				EEA8019C28259CE900F5C99C /* SceneAction.swift in Sources */,
 				EEA95A092823E7EA00D38991 /* NickNameSettingSceneInteractor.swift in Sources */,
 				EE8D86A12821473000A9E99F /* LoginSceneConfigurator.swift in Sources */,
 				EEF7B6C2282256F20073FC4C /* textButton.swift in Sources */,
 				EE975C6F2820DDA700EBB527 /* SceneDelegate.swift in Sources */,
-				EEA801842825783600F5C99C /* LoginSceneFactory.swift in Sources */,
+				EEA801842825783600F5C99C /* SceneFactory.swift in Sources */,
 				EEA95A082823E7EA00D38991 /* NickNameSettingSceneViewController.swift in Sources */,
 				EEA95A062823E7EA00D38991 /* NickNameSettingSceneWorker.swift in Sources */,
 				EEA95A072823E7EA00D38991 /* NickNameSettingSceneRouter.swift in Sources */,
