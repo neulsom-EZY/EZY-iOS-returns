@@ -28,9 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         sceneFactory.configurator = DefaultLoginSceneConfigurator(sceneFactory: sceneFactory)
         let navController = UINavigationController(
             rootViewController: sceneFactory.makeLoginScene()
-                //AppDelegate.container.resolve(LoginSceneViewController.self)!
         )
-        
+        navController.navigationBar.isHidden = true
         //MARK: - Inject
         window.rootViewController = Inject.ViewControllerHost(navController)
         window.makeKeyAndVisible()

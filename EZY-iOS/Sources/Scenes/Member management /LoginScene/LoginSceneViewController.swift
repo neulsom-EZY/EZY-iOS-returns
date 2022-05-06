@@ -121,7 +121,7 @@ final class LoginSceneViewController: BaseViewController {
 extension LoginSceneViewController:
     LoginSceneViewControllerInput {
     func doNotHaveAccount() {
-        print("Router.DoNotHavAccount")
+        logger.info("logged : doNotHavAcount")
         router?.doNotHaveAcount()
     }
     

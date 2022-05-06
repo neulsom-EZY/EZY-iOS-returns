@@ -34,6 +34,7 @@
 		EE975CCC2821133C00EBB527 /* UIGradient in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CCB2821133C00EBB527 /* UIGradient */; };
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
 		EEA801842825783600F5C99C /* LoginSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801832825783600F5C99C /* LoginSceneFactory.swift */; };
+		EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */; };
 		EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FA2823CC5100D38991 /* UserTextField.swift */; };
 		EEA95A052823E7EA00D38991 /* NickNameSettingScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */; };
 		EEA95A062823E7EA00D38991 /* NickNameSettingSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */; };
@@ -65,6 +66,7 @@
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
 		EEA801832825783600F5C99C /* LoginSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSceneFactory.swift; sourceTree = "<group>"; };
+		EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZYCustomNavigationBar.swift; sourceTree = "<group>"; };
 		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
 		EEA959FF2823E7EA00D38991 /* NickNameSettingScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingScenePresenter.swift; sourceTree = "<group>"; };
 		EEA95A002823E7EA00D38991 /* NickNameSettingSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameSettingSceneWorker.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			children = (
 				EEF7B6C428225A600073FC4C /* UserCustomButton.swift */,
 				EEA959FA2823CC5100D38991 /* UserTextField.swift */,
+				EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				EEA95A052823E7EA00D38991 /* NickNameSettingScenePresenter.swift in Sources */,
 				EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
+				EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
 				EEA95A0A2823E7EA00D38991 /* NickNameSettingSceneConfigurator.swift in Sources */,
 				EEA95A092823E7EA00D38991 /* NickNameSettingSceneInteractor.swift in Sources */,
