@@ -64,12 +64,30 @@
       }
     },
     {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "a81b7367f2c46875f29577e03a60c39cdfad0c8d"
+      }
+    },
+    {
       "identity" : "reactiveswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
       "state" : {
         "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
         "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "reactorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactorKit/ReactorKit",
+      "state" : {
+        "branch" : "master",
+        "revision" : "be881621c0787797d75f37e4161856f7abee676d"
       }
     },
     {
@@ -88,6 +106,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "9a5756ba41f7a864ff0738c21876d52b9e67eec7"
+      }
+    },
+    {
+      "identity" : "ribs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uber/RIBs.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ea969125fb2f3b45fa43e1e4a5e85cd623c49390"
       }
     },
     {
@@ -142,6 +169,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "80d42010d24dbe676de684c0fcf4087f5cafe058"
+      }
+    },
+    {
+      "identity" : "weakmaptable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactorKit/WeakMapTable.git",
+      "state" : {
+        "revision" : "cb05d64cef2bbf51e85c53adee937df46540a74e",
+        "version" : "1.2.1"
       }
     }
   ],

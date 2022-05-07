@@ -7,13 +7,19 @@
 
 import UIKit
 import Swinject
+import RIBs
 import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static let container = Container()
     
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        let window  = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
         
         AppDelegate.container.registerDependencies()
         
