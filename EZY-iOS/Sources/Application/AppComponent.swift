@@ -7,7 +7,7 @@
 
 import RIBs
 
-class AppComponent : Component<EmptyDependency>, AppRootDependency{
+final class AppComponent : BootStrap{
     init(){
         super.init(dependency: EmptyComponent())
     }

@@ -27,6 +27,7 @@
 		EE975CE028211BF500EBB527 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = EE975CDF28211BF500EBB527 /* Inject */; };
 		EEA68697282624820001DC16 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = EEA68696282624820001DC16 /* ReactorKit */; };
 		EEA6869A282625710001DC16 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = EEA68699282625710001DC16 /* Reachability */; };
+		EEA6869D28262A790001DC16 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = EEA6869C28262A790001DC16 /* NeedleFoundation */; };
 		EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */; };
 		EEA8019F2825A42700F5C99C /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = EEA8019E2825A42700F5C99C /* RIBs */; };
 		EEA801A12825A4AD00F5C99C /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801A02825A4AD00F5C99C /* AppComponent.swift */; };
@@ -75,6 +76,7 @@
 				EECDAF162821776C0048306E /* SnapKit in Frameworks */,
 				EEA6869A282625710001DC16 /* Reachability in Frameworks */,
 				EE975CBE28210AB600EBB527 /* UIUtil in Frameworks */,
+				EEA6869D28262A790001DC16 /* NeedleFoundation in Frameworks */,
 				EE975C962820E88300EBB527 /* PanModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +218,7 @@
 				EEA8019E2825A42700F5C99C /* RIBs */,
 				EEA68696282624820001DC16 /* ReactorKit */,
 				EEA68699282625710001DC16 /* Reachability */,
+				EEA6869C28262A790001DC16 /* NeedleFoundation */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -263,6 +266,7 @@
 				EEA8019D2825A42700F5C99C /* XCRemoteSwiftPackageReference "RIBs" */,
 				EEA68695282624820001DC16 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				EEA68698282625710001DC16 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+				EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -623,6 +627,14 @@
 				kind = branch;
 			};
 		};
+		EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/needle.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		EEA8019D2825A42700F5C99C /* XCRemoteSwiftPackageReference "RIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uber/RIBs.git";
@@ -727,6 +739,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEA68698282625710001DC16 /* XCRemoteSwiftPackageReference "Reachability.swift" */;
 			productName = Reachability;
+		};
+		EEA6869C28262A790001DC16 /* NeedleFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundation;
 		};
 		EEA8019E2825A42700F5C99C /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;
