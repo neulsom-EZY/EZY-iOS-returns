@@ -5,10 +5,12 @@
 //  Created by Ji-hoon Ahn on 2022/05/07.
 //
 
-import RIBs
+import NeedleFoundation
 
-final class AppComponent : BootStrap{
-    init(){
-        super.init(dependency: EmptyComponent())
+final class AppComponent : BootstrapComponent{
+    var rootBuilder : RootBuildable{
+        RootBuilder{
+            RootComponent(parent: self)
+        }
     }
 }

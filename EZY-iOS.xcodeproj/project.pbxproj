@@ -28,6 +28,14 @@
 		EEA68697282624820001DC16 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = EEA68696282624820001DC16 /* ReactorKit */; };
 		EEA6869A282625710001DC16 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = EEA68699282625710001DC16 /* Reachability */; };
 		EEA6869D28262A790001DC16 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = EEA6869C28262A790001DC16 /* NeedleFoundation */; };
+		EEA686A228262BBB0001DC16 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6869F28262BBB0001DC16 /* RootRouter.swift */; };
+		EEA686A328262BBB0001DC16 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A028262BBB0001DC16 /* RootBuilder.swift */; };
+		EEA686A428262BBB0001DC16 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A128262BBB0001DC16 /* RootInteractor.swift */; };
+		EEA686AA282631F40001DC16 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A6282631F40001DC16 /* LoginRouter.swift */; };
+		EEA686AB282631F40001DC16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A7282631F40001DC16 /* LoginViewController.swift */; };
+		EEA686AC282631F40001DC16 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A8282631F40001DC16 /* LoginBuilder.swift */; };
+		EEA686AD282631F40001DC16 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA686A9282631F40001DC16 /* LoginInteractor.swift */; };
+		EEA686AF28268D950001DC16 /* RIBsUtil in Frameworks */ = {isa = PBXBuildFile; productRef = EEA686AE28268D950001DC16 /* RIBsUtil */; };
 		EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */; };
 		EEA8019F2825A42700F5C99C /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = EEA8019E2825A42700F5C99C /* RIBs */; };
 		EEA801A12825A4AD00F5C99C /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801A02825A4AD00F5C99C /* AppComponent.swift */; };
@@ -46,6 +54,13 @@
 		EE975C7A2820DDA900EBB527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "EZY-iOS/Supporting/Info.plist"; sourceTree = SOURCE_ROOT; };
 		EE975C892820E6C500EBB527 /* Platform */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Platform; sourceTree = "<group>"; };
 		EE975CA72820EB4300EBB527 /* AppDI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDI.swift; sourceTree = "<group>"; };
+		EEA6869F28262BBB0001DC16 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		EEA686A028262BBB0001DC16 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		EEA686A128262BBB0001DC16 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		EEA686A6282631F40001DC16 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		EEA686A7282631F40001DC16 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EEA686A8282631F40001DC16 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		EEA686A9282631F40001DC16 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZYCustomNavigationBar.swift; sourceTree = "<group>"; };
 		EEA801A02825A4AD00F5C99C /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
@@ -75,6 +90,7 @@
 				EE975CB62820EEBF00EBB527 /* Base in Frameworks */,
 				EECDAF162821776C0048306E /* SnapKit in Frameworks */,
 				EEA6869A282625710001DC16 /* Reachability in Frameworks */,
+				EEA686AF28268D950001DC16 /* RIBsUtil in Frameworks */,
 				EE975CBE28210AB600EBB527 /* UIUtil in Frameworks */,
 				EEA6869D28262A790001DC16 /* NeedleFoundation in Frameworks */,
 				EE975C962820E88300EBB527 /* PanModal in Frameworks */,
@@ -116,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				EE975C832820E53F00EBB527 /* Application */,
-				EEA801A22825A4EB00F5C99C /* AppRoot */,
+				EEA801A22825A4EB00F5C99C /* Scene */,
 				EEF7B6C3282259070073FC4C /* View */,
 			);
 			path = Sources;
@@ -164,11 +180,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EEA801A22825A4EB00F5C99C /* AppRoot */ = {
+		EEA6869E28262BA90001DC16 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				EEA6869F28262BBB0001DC16 /* RootRouter.swift */,
+				EEA686A028262BBB0001DC16 /* RootBuilder.swift */,
+				EEA686A128262BBB0001DC16 /* RootInteractor.swift */,
 			);
-			path = AppRoot;
+			path = Root;
+			sourceTree = "<group>";
+		};
+		EEA686A5282631DF0001DC16 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEA686A6282631F40001DC16 /* LoginRouter.swift */,
+				EEA686A7282631F40001DC16 /* LoginViewController.swift */,
+				EEA686A8282631F40001DC16 /* LoginBuilder.swift */,
+				EEA686A9282631F40001DC16 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EEA801A22825A4EB00F5C99C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EEA686A5282631DF0001DC16 /* Login */,
+				EEA6869E28262BA90001DC16 /* Root */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		EEF7B6C3282259070073FC4C /* View */ = {
@@ -219,6 +258,7 @@
 				EEA68696282624820001DC16 /* ReactorKit */,
 				EEA68699282625710001DC16 /* Reachability */,
 				EEA6869C28262A790001DC16 /* NeedleFoundation */,
+				EEA686AE28268D950001DC16 /* RIBsUtil */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -298,8 +338,15 @@
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
 				EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
+				EEA686A228262BBB0001DC16 /* RootRouter.swift in Sources */,
 				EEA801A12825A4AD00F5C99C /* AppComponent.swift in Sources */,
+				EEA686A428262BBB0001DC16 /* RootInteractor.swift in Sources */,
 				EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */,
+				EEA686AA282631F40001DC16 /* LoginRouter.swift in Sources */,
+				EEA686AC282631F40001DC16 /* LoginBuilder.swift in Sources */,
+				EEA686AD282631F40001DC16 /* LoginInteractor.swift in Sources */,
+				EEA686A328262BBB0001DC16 /* RootBuilder.swift in Sources */,
+				EEA686AB282631F40001DC16 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +791,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */;
 			productName = NeedleFoundation;
+		};
+		EEA686AE28268D950001DC16 /* RIBsUtil */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RIBsUtil;
 		};
 		EEA8019E2825A42700F5C99C /* RIBs */ = {
 			isa = XCSwiftPackageProductDependency;

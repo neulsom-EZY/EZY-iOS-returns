@@ -18,8 +18,9 @@ let package = Package(
             name: "EZYUI",
             targets: ["EZYUI"]),
         .library(
-            name: "SnapKitExt",
-            targets: ["SnapKitExt"]),
+            name: "RIBsUtil",
+            targets: ["RIBsUtil"]),
+
 //        .library(
 //            name: "RxUtil",
 //            targets: ["RxUtil"]),
@@ -27,8 +28,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
         .package(url: "https://github.com/AliSoftware/Reusable", .exactItem("4.1.2")),
-        .package(url: "https://github.com/SnapKit/SnapKit", .exactItem("5.6.0"))
-//        .package(url: "https://github.com/RxSwiftCommunity/RxFlow", .exactItem("2.13.0"))
+        .package(url: "https://github.com/uber/RIBs", .exactItem("0.13.0"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -47,9 +47,9 @@ let package = Package(
                 "UIUtil",
             ]),
         .target(
-            name: "SnapKitExt",
+            name: "RIBsUtil",
             dependencies: [
-                "SnapKit",
+                "RIBs",
             ]),
 //        .target(
 //            name: "RxUtil",
