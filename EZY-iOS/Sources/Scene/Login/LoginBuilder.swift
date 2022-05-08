@@ -10,7 +10,7 @@ import RIBs
 import RIBsUtil
 
 protocol LoginDependency: NeedleFoundation.Dependency {
-    var loginViewController : RootViewControllable & LoginPresentable & LoginViewControllable { get }
+    var loginViewController : RootViewControllable & LoginPresentable & LoginViewControllable {get}
 }
 
 //MARK: - LoginBuildDependency
@@ -34,15 +34,16 @@ final class LoginBuilder:
     LoginBuildable
 {
     override func build(
-      with component: LoginComponent,
-      _ payload: LoginBuildDependency
+        with component: LoginComponent,
+        _ payload: LoginBuildDependency
     ) -> LoginRouting {
-      let interactor = LoginInteractor(presenter: component.loginViewController)
-      interactor.listener = payload.listener
-
-      return LoginRouter(
-        interactor: interactor,
-        viewController: component.loginViewController
-      )
+        let viewController = LoginViewController()
+        let interactor = LoginInteractor(presenter: viewController)
+        interactor.listener = payload.listener
+        
+        return LoginRouter(
+            interactor: interactor,
+            viewController: viewController
+        )
     }
 }

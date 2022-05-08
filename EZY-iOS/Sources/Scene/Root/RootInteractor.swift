@@ -2,15 +2,15 @@
 //  RootInteractor.swift
 //  EZY-iOS
 //
-//  Created by Ji-hoon Ahn on 2022/05/07.
+//  Created by Ji-hoon Ahn on 2022/05/08.
 //
 
 import RIBs
 import RxSwift
 
 protocol RootRouting: Routing {
-    func attachLoginRIB()
     func cleanupViews()
+    func attachLoginRIB()
 }
 
 protocol RootListener: AnyObject {}
@@ -22,11 +22,11 @@ final class RootInteractor: Interactor, RootInteractable {
 
     override func didBecomeActive() {
         super.didBecomeActive()
-        self.router?.attachLoginRIB()
+        router?.attachLoginRIB()
     }
 
     override func willResignActive() {
         super.willResignActive()
-        self.router?.cleanupViews()
+        router?.cleanupViews()
     }
 }

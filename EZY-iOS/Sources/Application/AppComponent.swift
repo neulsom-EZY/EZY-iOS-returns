@@ -7,7 +7,7 @@
 
 import NeedleFoundation
 
-final class AppComponent : BootstrapComponent{
+final class AppComponent: BootstrapComponent, RootDependency {
     var rootBuilder : RootBuildable{
         RootBuilder{
             RootComponent(parent: self)

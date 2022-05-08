@@ -20,10 +20,12 @@ let package = Package(
         .library(
             name: "RIBsUtil",
             targets: ["RIBsUtil"]),
-
-//        .library(
-//            name: "RxUtil",
-//            targets: ["RxUtil"]),
+        .library(
+            name: "RxUtil",
+            targets: ["RxUtil"]),
+        .library(
+            name: "ProtocolExt",
+            targets: ["ProtocolExt"]),
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift", .exactItem("6.5.0")),
@@ -51,10 +53,14 @@ let package = Package(
             dependencies: [
                 "RIBs",
             ]),
-//        .target(
-//            name: "RxUtil",
-//            dependencies: [
-//                "RxSwift",
-//            ]),
+        .target(
+            name: "RxUtil",
+            dependencies: [
+                "RxSwift",
+            ]),
+        .target(
+            name: "ProtocolExt",
+            dependencies: [
+            ]),
     ]
 )

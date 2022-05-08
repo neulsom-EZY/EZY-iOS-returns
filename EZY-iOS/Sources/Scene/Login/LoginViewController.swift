@@ -8,6 +8,7 @@
 import RIBs
 import RxSwift
 import UIKit
+import Base
 
 protocol LoginPresentableListener: AnyObject {
     // TODO: Declare properties and methods that the view controller can invoke to perform
@@ -15,18 +16,12 @@ protocol LoginPresentableListener: AnyObject {
     // interactor class.
 }
 
-final class LoginViewController: UIViewController, LoginPresentable, LoginViewControllable {
+final class LoginViewController: BaseViewController, LoginPresentable, LoginViewControllable {
 
     weak var listener: LoginPresentableListener?
     
-    init() {
-      super.init(nibName: nil, bundle: nil)
-    }
 
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-    }
+    
 }
 
 extension LoginViewController : RootViewControllable {}
