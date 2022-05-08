@@ -24,4 +24,3 @@ final class LoginViewController: BaseViewController, LoginPresentable, LoginView
     
 }
 
-extension LoginViewController : RootViewControllable {}

@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         AppDelegate.container.registerDependencies()
-        registerProviderFactories()
         setReachability()
 
         setWindow()
@@ -52,7 +51,7 @@ extension AppDelegate{
     private func setLaunchRouter() {
         guard let window = self.window else {return}
         let appComponent = AppComponent()
-        self.launchRouter = appComponent.rootBuilder.build()
+        self.launchRouter = RootBuilder(dependency: appComponent).build()
         self.launchRouter?.launch(from: window)
     }
     private func setReachability(){

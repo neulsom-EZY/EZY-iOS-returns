@@ -36,14 +36,15 @@
 		EEA8019F2825A42700F5C99C /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = EEA8019E2825A42700F5C99C /* RIBs */; };
 		EEA801A12825A4AD00F5C99C /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA801A02825A4AD00F5C99C /* AppComponent.swift */; };
 		EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA959FA2823CC5100D38991 /* UserTextField.swift */; };
-		EEAC4CE32827AC0C00A56D37 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = EEAC4CE22827AC0C00A56D37 /* NeedleFoundation */; };
-		EEAC4CE92827AC6D00A56D37 /* NeedleGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CE82827AC6D00A56D37 /* NeedleGenerate.swift */; };
-		EEAC4CED2827AC8200A56D37 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CEA2827AC8200A56D37 /* RootRouter.swift */; };
-		EEAC4CEE2827AC8200A56D37 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CEB2827AC8200A56D37 /* RootBuilder.swift */; };
-		EEAC4CEF2827AC8200A56D37 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CEC2827AC8200A56D37 /* RootInteractor.swift */; };
+		EEAC4CF62827B07200A56D37 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CF22827B07200A56D37 /* RootRouter.swift */; };
+		EEAC4CF72827B07200A56D37 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CF32827B07200A56D37 /* RootViewController.swift */; };
+		EEAC4CF82827B07200A56D37 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CF42827B07200A56D37 /* RootBuilder.swift */; };
+		EEAC4CF92827B07200A56D37 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC4CF52827B07200A56D37 /* RootInteractor.swift */; };
 		EECDAF0A282169C10048306E /* EZYUI in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF09282169C10048306E /* EZYUI */; };
 		EECDAF0D28216AD40048306E /* Switches in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF0C28216AD40048306E /* Switches */; };
 		EECDAF162821776C0048306E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EECDAF152821776C0048306E /* SnapKit */; };
+		EEF2B7B82827F79A00166593 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = EEF2B7B72827F79A00166593 /* NeedleFoundation */; };
+		EEF2B7BC2827F87E00166593 /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2B7BB2827F87E00166593 /* RootComponent.swift */; };
 		EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF7B6C428225A600073FC4C /* UserCustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,10 +63,11 @@
 		EEA8018528258A2600F5C99C /* EZYCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZYCustomNavigationBar.swift; sourceTree = "<group>"; };
 		EEA801A02825A4AD00F5C99C /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
 		EEA959FA2823CC5100D38991 /* UserTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTextField.swift; sourceTree = "<group>"; };
-		EEAC4CE82827AC6D00A56D37 /* NeedleGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleGenerate.swift; sourceTree = "<group>"; };
-		EEAC4CEA2827AC8200A56D37 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		EEAC4CEB2827AC8200A56D37 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
-		EEAC4CEC2827AC8200A56D37 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		EEAC4CF22827B07200A56D37 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		EEAC4CF32827B07200A56D37 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		EEAC4CF42827B07200A56D37 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		EEAC4CF52827B07200A56D37 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		EEF2B7BB2827F87E00166593 /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
 		EEF7B6C428225A600073FC4C /* UserCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +92,7 @@
 				EECDAF0A282169C10048306E /* EZYUI in Frameworks */,
 				EE975CAB2820EB5900EBB527 /* RxSwift in Frameworks */,
 				EE975CB62820EEBF00EBB527 /* Base in Frameworks */,
-				EEAC4CE32827AC0C00A56D37 /* NeedleFoundation in Frameworks */,
+				EEF2B7B82827F79A00166593 /* NeedleFoundation in Frameworks */,
 				EECDAF162821776C0048306E /* SnapKit in Frameworks */,
 				EEA6869A282625710001DC16 /* Reachability in Frameworks */,
 				EEA686AF28268D950001DC16 /* RIBsUtil in Frameworks */,
@@ -186,9 +188,11 @@
 		EEA6869E28262BA90001DC16 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				EEAC4CEA2827AC8200A56D37 /* RootRouter.swift */,
-				EEAC4CEB2827AC8200A56D37 /* RootBuilder.swift */,
-				EEAC4CEC2827AC8200A56D37 /* RootInteractor.swift */,
+				EEAC4CF22827B07200A56D37 /* RootRouter.swift */,
+				EEAC4CF32827B07200A56D37 /* RootViewController.swift */,
+				EEAC4CF42827B07200A56D37 /* RootBuilder.swift */,
+				EEAC4CF52827B07200A56D37 /* RootInteractor.swift */,
+				EEF2B7BB2827F87E00166593 /* RootComponent.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -207,7 +211,6 @@
 		EEA686B028269BA80001DC16 /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
-				EEAC4CE82827AC6D00A56D37 /* NeedleGenerate.swift */,
 			);
 			path = Utilites;
 			sourceTree = "<group>";
@@ -269,7 +272,7 @@
 				EEA68696282624820001DC16 /* ReactorKit */,
 				EEA68699282625710001DC16 /* Reachability */,
 				EEA686AE28268D950001DC16 /* RIBsUtil */,
-				EEAC4CE22827AC0C00A56D37 /* NeedleFoundation */,
+				EEF2B7B72827F79A00166593 /* NeedleFoundation */,
 			);
 			productName = "EZY-iOS";
 			productReference = EE975C692820DDA700EBB527 /* EZY-iOS.app */;
@@ -317,7 +320,7 @@
 				EEA8019D2825A42700F5C99C /* XCRemoteSwiftPackageReference "RIBs" */,
 				EEA68695282624820001DC16 /* XCRemoteSwiftPackageReference "ReactorKit" */,
 				EEA68698282625710001DC16 /* XCRemoteSwiftPackageReference "Reachability.swift" */,
-				EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */,
+				EEF2B7B62827F79A00166593 /* XCRemoteSwiftPackageReference "needle" */,
 			);
 			productRefGroup = EE975C6A2820DDA700EBB527 /* Products */;
 			projectDirPath = "";
@@ -346,19 +349,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA959FB2823CC5100D38991 /* UserTextField.swift in Sources */,
+				EEAC4CF82827B07200A56D37 /* RootBuilder.swift in Sources */,
 				EE975CA82820EB4300EBB527 /* AppDI.swift in Sources */,
-				EEAC4CEE2827AC8200A56D37 /* RootBuilder.swift in Sources */,
 				EEA8018628258A2600F5C99C /* EZYCustomNavigationBar.swift in Sources */,
 				EE975C6D2820DDA700EBB527 /* AppDelegate.swift in Sources */,
-				EEAC4CED2827AC8200A56D37 /* RootRouter.swift in Sources */,
+				EEAC4CF72827B07200A56D37 /* RootViewController.swift in Sources */,
+				EEAC4CF62827B07200A56D37 /* RootRouter.swift in Sources */,
 				EEA801A12825A4AD00F5C99C /* AppComponent.swift in Sources */,
 				EEF7B6C528225A600073FC4C /* UserCustomButton.swift in Sources */,
+				EEAC4CF92827B07200A56D37 /* RootInteractor.swift in Sources */,
 				EEA686AA282631F40001DC16 /* LoginRouter.swift in Sources */,
 				EEA686AC282631F40001DC16 /* LoginBuilder.swift in Sources */,
 				EEA686AD282631F40001DC16 /* LoginInteractor.swift in Sources */,
-				EEAC4CE92827AC6D00A56D37 /* NeedleGenerate.swift in Sources */,
+				EEF2B7BC2827F87E00166593 /* RootComponent.swift in Sources */,
 				EEA686AB282631F40001DC16 /* LoginViewController.swift in Sources */,
-				EEAC4CEF2827AC8200A56D37 /* RootInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,14 +690,6 @@
 				kind = branch;
 			};
 		};
-		EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/uber/needle.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		EEA8019D2825A42700F5C99C /* XCRemoteSwiftPackageReference "RIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uber/RIBs.git";
@@ -715,6 +711,14 @@
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
 				branch = develop;
+				kind = branch;
+			};
+		};
+		EEF2B7B62827F79A00166593 /* XCRemoteSwiftPackageReference "needle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/needle.git";
+			requirement = {
+				branch = master;
 				kind = branch;
 			};
 		};
@@ -808,11 +812,6 @@
 			package = EEA8019D2825A42700F5C99C /* XCRemoteSwiftPackageReference "RIBs" */;
 			productName = RIBs;
 		};
-		EEAC4CE22827AC0C00A56D37 /* NeedleFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EEA6869B28262A790001DC16 /* XCRemoteSwiftPackageReference "needle" */;
-			productName = NeedleFoundation;
-		};
 		EECDAF09282169C10048306E /* EZYUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = EZYUI;
@@ -826,6 +825,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EECDAF14282177550048306E /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		EEF2B7B72827F79A00166593 /* NeedleFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEF2B7B62827F79A00166593 /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

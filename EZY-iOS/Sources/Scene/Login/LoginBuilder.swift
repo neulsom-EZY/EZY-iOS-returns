@@ -10,7 +10,7 @@ import RIBs
 import RIBsUtil
 
 protocol LoginDependency: NeedleFoundation.Dependency {
-    var loginViewController : RootViewControllable & LoginPresentable & LoginViewControllable {get}
+    
 }
 
 //MARK: - LoginBuildDependency

@@ -7,47 +7,39 @@
 
 import RIBs
 
-protocol RootInteractable: Interactable, LoginListener {
+protocol RootInteractable: Interactable , LoginListener{
     var router: RootRouting? { get set }
     var listener: RootListener? { get set }
 }
 
-protocol RootViewControllable: ViewControllable {}
+protocol RootViewControllable: ViewControllable {
+    func setViewController(viewController : ViewControllable)
+}
 
 final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, RootRouting {
 
-    private var loginBuilder: LoginBuildable
-    private var loginRouter: LoginRouting?
-
+    
+    
     init(
-      loginBuilder: LoginBuildable,
-      interactor: RootInteractable,
-      viewController: RootViewControllable
-    ) {
-      self.loginBuilder = loginBuilder
-      super.init(interactor: interactor, viewController: viewController)
-      interactor.router = self
+        interactor : RootInteractable,
+        viewController : RootViewControllable,
+        loginBuilder : LoginBuilder
+    ){
+        self.loginBuilder = loginBuilder
+        super.init(interactor: interactor, viewController: viewController)
+        interactor.router = self
     }
-
-    func cleanupViews() {
+    
+    override func didLoad() {
+        super.didLoad()
+        routerToLogin()
+    }
+    
+    //MARK: - Private
+    
+    private let loginBuilder : LoginBuilder
+    
+    func routerToLogin() {
         
-    }
-}
-
-extension RootRouter{
-    func attachLoginRIB() {
-        guard self.loginRouter == nil else {return}
-        let router = self.loginBuilder.build(
-            with: LoginBuildDependency(
-                listener: interactor
-            )
-        )
-        self.loginRouter = router
-        attachChild(router)
-    }
-    private func detachLoginRIB() {
-      guard let router = loginRouter else { return }
-      self.loginRouter = nil
-      detachChild(router)
     }
 }

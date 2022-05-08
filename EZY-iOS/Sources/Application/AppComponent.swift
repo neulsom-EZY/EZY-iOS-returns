@@ -5,12 +5,11 @@
 //  Created by Ji-hoon Ahn on 2022/05/07.
 //
 
+import RIBs
 import NeedleFoundation
 
-final class AppComponent: BootstrapComponent, RootDependency {
-    var rootBuilder : RootBuildable{
-        RootBuilder{
-            RootComponent(parent: self)
-        }
+class AppComponent: BootstrapComponent , RootDependency {
+    var rootComponent : RootComponent{
+        RootComponent(parent: self)
     }
 }
